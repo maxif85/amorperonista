@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Efemérides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .efemeride-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .efemeride-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .calendar-day {
+            transition: all 0.2s ease;
+        }
+        .calendar-day:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .has-event {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            font-weight: 600;
+        }
+        .selected-day {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo/Brand -->
+                <div class="flex items-center space-x-2">
+                    <div class="text-2xl">📅</div>
+                    <span class="text-xl font-bold text-gray-800">Efemérides</span>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">Inicio</a>
+                    <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">Calendario</a>
+                    <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">Eventos</a>
+                    <a href="#" class="text-gray-600 hover:text-purple-600 transition-colors">Configuración</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="text-gray-600 hover:text-purple-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+                <div class="px-4 py-2 space-y-1">
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-purple-600 hover:bg-gray-50 rounded-md transition-colors">Inicio</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-purple-600 hover:bg-gray-50 rounded-md transition-colors">Calendario</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-purple-600 hover:bg-gray-50 rounded-md transition-colors">Eventos</a>
+                    <a href="#" class="block px-3 py-2 text-gray-600 hover:text-purple-600 hover:bg-gray-50 rounded-md transition-colors">Configuración</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">📅 Calendario de Efemérides</h1>
+            <p class="text-gray-600">Descubre eventos históricos y celebraciones importantes</p>
+        </div>
+
+        <!-- Calendar Navigation -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
+            <div class="flex items-center justify-between mb-6">
+                <button id="prevMonth" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all">
+                    ← Anterior
+                </button>
+                <h2 id="currentMonth" class="text-2xl font-bold text-gray-800"></h2>
+                <button id="nextMonth" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all">
+                    Siguiente →
+                </button>
+            </div>
+
+            <!-- Calendar Grid -->
+            <div class="grid grid-cols-7 gap-2 mb-4">
+                <div class="text-center font-semibold text-gray-600 py-2">Dom</div>
+                <div class="text-center font-semibold text-gray-600 py-2">Lun</div>
+                <div class="text-center font-semibold text-gray-600 py-2">Mar</div>
+                <div class="text-center font-semibold text-gray-600 py-2">Mié</div>
+                <div class="text-center font-semibold text-gray-600 py-2">Jue</div>
+                <div class="text-center font-semibold text-gray-600 py-2">Vie</div>
+                <div class="text-center font-semibold text-gray-600 py-2">Sáb</div>
+            </div>
+            <div id="calendarGrid" class="grid grid-cols-7 gap-2"></div>
+        </div>
+
+        <!-- Efemérides del día seleccionado -->
+        <div class="bg-white rounded-2xl shadow-lg p-6">
+            <h3 id="selectedDate" class="text-2xl font-bold text-gray-800 mb-4">Selecciona una fecha</h3>
+            <div id="efemeridesContainer" class="space-y-4">
+                <p class="text-gray-500 text-center py-8">Haz clic en una fecha del calendario para ver las efemérides</p>
+            </div>
+        </div>
+
+        <!-- Información sobre el archivo de datos -->
+        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl shadow-lg p-6 mt-8">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">📁 Configuración del Archivo de Datos</h3>
+            <div class="space-y-3 text-sm text-gray-600">
+                <p><strong>Archivo requerido:</strong> <code class="bg-gray-200 px-2 py-1 rounded">efemerides.json</code></p>
+                <p><strong>Ubicación:</strong> En la misma carpeta que este archivo HTML</p>
+                <div class="bg-white p-4 rounded-lg border">
+                    <p class="font-semibold mb-2">Formato del archivo JSON:</p>
+                    <pre class="text-xs bg-gray-100 p-3 rounded overflow-x-auto">{
+  "1-1": [
+    {
+      "tipo": "Mundial",
+      "evento": "Año Nuevo",
+      "descripcion": "Celebración del inicio del nuevo año"
+    },
+    {
+      "tipo": "Historia",
+      "evento": "Otro evento del mismo día",
+      "descripcion": "Puedes agregar múltiples eventos por fecha"
+    }
+  ],
+  "12-25": [
+    {
+      "tipo": "Religioso", 
+      "evento": "Navidad",
+      "descripcion": "Celebración del nacimiento de Jesucristo"
+    },
+    {
+      "tipo": "Historia",
+      "evento": "Coronación de Carlomagno (800)",
+      "descripcion": "Emperador del Sacro Imperio Romano"
+    }
+  ]
+}</pre>
+                </div>
+                <p class="text-xs text-gray-500">
+                    💡 <strong>Nota:</strong> Si no se encuentra el archivo externo, se usarán los datos de ejemplo incluidos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Base de datos de efemérides (se cargará desde archivo externo)
+        let efemerides = {};
+        
+        // Datos de ejemplo embebidos como respaldo
+        const efemeridesRespaldo = {
+            "1-1": [
+                { tipo: "Mundial", evento: "Año Nuevo", descripcion: "Celebración del inicio del nuevo año en el calendario gregoriano" },
+                { tipo: "Historia", evento: "Creación de la bandera de Cuba (1902)", descripcion: "Se adopta oficialmente la bandera cubana" },
+                { tipo: "Religioso", evento: "Circuncisión de Jesús", descripcion: "Festividad cristiana celebrada ocho días después de Navidad" }
+            ],
+            "1-6": [
+                { tipo: "Religioso", evento: "Día de los Reyes Magos", descripcion: "Celebración cristiana de la Epifanía" }
+            ],
+            "2-14": [
+                { tipo: "Mundial", evento: "Día de San Valentín", descripcion: "Día del amor y la amistad celebrado mundialmente" }
+            ],
+            "3-8": [
+                { tipo: "Mundial", evento: "Día Internacional de la Mujer", descripcion: "Conmemoración de la lucha por los derechos de las mujeres" }
+            ],
+            "3-21": [
+                { tipo: "Astronómico", evento: "Equinoccio de Primavera", descripcion: "Inicio de la primavera en el hemisferio norte" }
+            ],
+            "4-22": [
+                { tipo: "Mundial", evento: "Día de la Tierra", descripcion: "Día dedicado a la conciencia ambiental y protección del planeta" }
+            ],
+            "4-23": [
+                { tipo: "Cultural", evento: "Día Mundial del Libro", descripcion: "Celebración de la lectura y los derechos de autor" }
+            ],
+            "5-1": [
+                { tipo: "Mundial", evento: "Día del Trabajador", descripcion: "Conmemoración de los derechos laborales" }
+            ],
+            "5-5": [
+                { tipo: "México", evento: "Batalla de Puebla (1862)", descripcion: "Victoria mexicana sobre el ejército francés" },
+                { tipo: "Europa", evento: "Día de la Liberación (Países Bajos)", descripcion: "Fin de la ocupación nazi en los Países Bajos (1945)" }
+            ],
+            "6-21": [
+                { tipo: "Astronómico", evento: "Solsticio de Verano", descripcion: "Día más largo del año en el hemisferio norte" }
+            ],
+            "7-4": [
+                { tipo: "Estados Unidos", evento: "Día de la Independencia", descripcion: "Declaración de independencia de Estados Unidos (1776)" }
+            ],
+            "7-20": [
+                { tipo: "Espacial", evento: "Llegada del hombre a la Luna (1969)", descripcion: "Neil Armstrong y Buzz Aldrin caminan en la Luna" }
+            ],
+            "8-15": [
+                { tipo: "Religioso", evento: "Asunción de la Virgen María", descripcion: "Festividad católica" }
+            ],
+            "9-16": [
+                { tipo: "México", evento: "Grito de Independencia (1810)", descripcion: "Inicio de la Guerra de Independencia de México" }
+            ],
+            "9-23": [
+                { tipo: "Astronómico", evento: "Equinoccio de Otoño", descripcion: "Inicio del otoño en el hemisferio norte" }
+            ],
+            "10-12": [
+                { tipo: "América", evento: "Día de la Raza", descripcion: "Conmemoración del encuentro entre dos mundos (1492)" }
+            ],
+            "10-31": [
+                { tipo: "Cultural", evento: "Halloween", descripcion: "Festividad de origen celta, noche de brujas" }
+            ],
+            "11-1": [
+                { tipo: "México", evento: "Día de Todos los Santos", descripcion: "Celebración del Día de Muertos en México" }
+            ],
+            "11-2": [
+                { tipo: "México", evento: "Día de los Fieles Difuntos", descripcion: "Día de Muertos, tradición mexicana patrimonio de la humanidad" }
+            ],
+            "12-21": [
+                { tipo: "Astronómico", evento: "Solsticio de Invierno", descripcion: "Día más corto del año en el hemisferio norte" }
+            ],
+            "12-25": [
+                { tipo: "Religioso", evento: "Navidad", descripcion: "Celebración del nacimiento de Jesucristo" },
+                { tipo: "Historia", evento: "Coronación de Carlomagno (800)", descripcion: "Carlomagno es coronado emperador del Sacro Imperio Romano" },
+                { tipo: "Astronomía", evento: "Lanzamiento del Telescopio James Webb (2021)", descripcion: "Inicio de la misión del telescopio espacial más avanzado" }
+            ]
+        };
+
+        // Función para cargar efemérides desde archivo externo
+        async function cargarEfemerides() {
+            try {
+                // Intentar cargar desde archivo JSON externo
+                const response = await fetch('efemerides.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    efemerides = data;
+                    console.log('✅ Efemérides cargadas desde archivo externo');
+                    mostrarMensajeEstado('Datos cargados desde archivo externo', 'success');
+                } else {
+                    throw new Error('Archivo no encontrado');
+                }
+            } catch (error) {
+                // Si falla, usar datos de respaldo
+                efemerides = efemeridesRespaldo;
+                console.log('⚠️ Usando datos de respaldo embebidos');
+                mostrarMensajeEstado('Usando datos de ejemplo (archivo externo no encontrado)', 'warning');
+            }
+            
+            // Actualizar calendario después de cargar datos
+            updateCalendar();
+        }
+
+        // Función para mostrar mensajes de estado
+        function mostrarMensajeEstado(mensaje, tipo) {
+            const container = document.querySelector('.container');
+            const alert = document.createElement('div');
+            alert.className = `fixed top-4 right-4 px-4 py-2 rounded-lg text-white font-medium z-50 ${
+                tipo === 'success' ? 'bg-green-500' : 'bg-yellow-500'
+            }`;
+            alert.textContent = mensaje;
+            
+            document.body.appendChild(alert);
+            
+            setTimeout(() => {
+                alert.remove();
+            }, 4000);
+        }
+
+        let currentDate = new Date();
+        let selectedDay = null;
+
+        const monthNames = [
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+
+        function updateCalendar() {
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth();
+            
+            document.getElementById('currentMonth').textContent = `${monthNames[month]} ${year}`;
+            
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            
+            const calendarGrid = document.getElementById('calendarGrid');
+            calendarGrid.innerHTML = '';
+            
+            // Días vacíos al inicio
+            for (let i = 0; i < firstDay; i++) {
+                const emptyDay = document.createElement('div');
+                emptyDay.className = 'h-12';
+                calendarGrid.appendChild(emptyDay);
+            }
+            
+            // Días del mes
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dayElement = document.createElement('div');
+                const dateKey = `${month + 1}-${day}`;
+                const hasEvents = efemerides[dateKey];
+                
+                dayElement.className = `calendar-day h-12 flex items-center justify-center rounded-lg cursor-pointer ${
+                    hasEvents ? 'has-event' : 'bg-gray-50 hover:bg-gray-100'
+                }`;
+                dayElement.textContent = day;
+                
+                dayElement.addEventListener('click', () => {
+                    // Remover selección anterior
+                    document.querySelectorAll('.selected-day').forEach(el => {
+                        el.classList.remove('selected-day');
+                        if (efemerides[el.dataset.dateKey]) {
+                            el.classList.add('has-event');
+                        }
+                    });
+                    
+                    // Agregar nueva selección
+                    dayElement.classList.add('selected-day');
+                    dayElement.classList.remove('has-event');
+                    dayElement.dataset.dateKey = dateKey;
+                    
+                    selectedDay = day;
+                    showEfemerides(dateKey, day, month, year);
+                });
+                
+                calendarGrid.appendChild(dayElement);
+            }
+        }
+
+        function showEfemerides(dateKey, day, month, year) {
+            const selectedDateElement = document.getElementById('selectedDate');
+            const container = document.getElementById('efemeridesContainer');
+            
+            selectedDateElement.textContent = `${day} de ${monthNames[month]} de ${year}`;
+            
+            const dayEfemerides = efemerides[dateKey];
+            
+            if (dayEfemerides && dayEfemerides.length > 0) {
+                container.innerHTML = dayEfemerides.map(efemeride => `
+                    <div class="efemeride-card bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-xl border-l-4 border-blue-500">
+                        <div class="flex items-center mb-2">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold mr-3">
+                                ${efemeride.tipo}
+                            </span>
+                            <h4 class="font-bold text-gray-800">${efemeride.evento}</h4>
+                        </div>
+                        <p class="text-gray-600">${efemeride.descripcion}</p>
+                    </div>
+                `).join('');
+            } else {
+                container.innerHTML = `
+                    <div class="text-center py-8">
+                        <div class="text-6xl mb-4">📅</div>
+                        <p class="text-gray-500">No hay efemérides registradas para esta fecha</p>
+                        <p class="text-sm text-gray-400 mt-2">¡Pero cada día es especial por sí mismo!</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Event listeners
+        document.getElementById('prevMonth').addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() - 1);
+            updateCalendar();
+        });
+
+        document.getElementById('nextMonth').addEventListener('click', () => {
+            currentDate.setMonth(currentDate.getMonth() + 1);
+            updateCalendar();
+        });
+
+        // Mobile menu functionality
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Inicializar aplicación
+        document.addEventListener('DOMContentLoaded', () => {
+            cargarEfemerides();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97d1761d001fa777',t:'MTc1NzUzMzkwMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
