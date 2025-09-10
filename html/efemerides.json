@@ -1,0 +1,22 @@
+{
+    "9-2": [
+      {
+        "tipo": "Gobierno",
+        "evento": "Banco de Crédito Industrial y Fomento Minero",
+        "descripcion": "Comienza a operar el Banco de Crédito Industrial y Fomento Minero. - 1944"
+      },
+      {
+        "tipo": "Gobierno",
+        "evento": "Curso de Elevación Cultural Superior",
+        "descripcion": "Perón inaugura el primer curso de Elevación Cultural Superior para los agregados obreros a las Embajadas en el Exterior. - 1946"
+      }
+    ],
+    "9-3": [
+      {
+        "tipo": "Gobierno",
+        "evento": "Compañía Unión Telefónica al estado",
+        "descripcion": "Se firma la transferencia de la Compañía Unión Telefónica de la ITT al Estado. - 1946"
+      }
+    ]
+  }
+  
