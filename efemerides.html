@@ -1,244 +1,354 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>PyV Hurlingham</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-      <!-- script para calendario -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <link rel="stylesheet" href="css/efemerides.css">
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item">
-                                 <a class="nav-link" href="index.html">Inicio</a>
-                              </li>
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="efemerides.html">Efemerides</a>
-                              </li>
-                              <!-- <li class="nav-item">
-                                 <a class="nav-link" href="glasses.html">Our Glasses</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="shop.html">Shop</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="contact.html">Contact Us</a>
-                              </li>
-                              <li class="nav-item d_none login_btn">
-                                 <a class="nav-link" href="#">Login</a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="#">Register</a>
-                              </li>
-                              <li class="nav-item d_none sea_icon">
-                                 <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
-                              </li> -->
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Efemérides</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background: linear-gradient(135deg, #e3f2fd 0%, #e8eaf6 100%);
+            min-height: 100vh;
+        }
+        
+        .efemeride-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            border-left: 4px solid #2196f3;
+        }
+        
+        .efemeride-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .calendar-day {
+            transition: all 0.2s ease;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .calendar-day:hover {
+            background-color: #00aeef;
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 174, 239, 0.3);
+        }
+        
+        .has-event {
+            background: linear-gradient(135deg, #00aeef 0%, #004b87 100%);
+            color: white;
+            font-weight: 600;
+            box-shadow: 0 2px 4px rgba(0, 174, 239, 0.4);
+        }
+        
+        .has-event:hover {
+            background: linear-gradient(135deg, #004b87 0%, #00aeef 100%);
+            color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 174, 239, 0.3);
+        }
+        
+        .selected-day {
+            background-color: #004b87 !important;
+            color: white !important;
+            font-weight: 700;
+        }
+        
+        .btn-gradient {
+            background-color: #00aeef;
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-gradient:hover,
+        .btn-gradient:active,
+        .btn-gradient:focus {
+            background-color: #004b87;
+            color: white;
+            box-shadow: none;
+        }
+        
+        .navbar-brand img {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .card-custom {
+            border-radius: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            border-radius: 16px;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+        
+        .calendar-header {
+            font-weight: 600;
+            color: #6c757d;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        .alert-custom {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/index.html">
+                <img src="/images/logo.png" alt="Logo Efemérides" width="40" height="40" class="me-2">
+                <span class="fw-bold">Efemérides</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Configuración</a>
+                    </li>
+                </ul>
             </div>
-         </div>
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
-         
-      <div class="container mx-auto px-4 py-8">
-         <!-- Header -->
-         <div class="text-center mb-8">
-               <h1 class="text-4xl font-bold text-gray-800 mb-2">📅 Calendario de Efemérides</h1>
-               <p class="text-gray-600">Descubre eventos históricos y celebraciones importantes</p>
-         </div>
+        </div>
+    </nav>
 
-         <!-- Calendar Navigation -->
-         <div class="bg-white rounded-2xl shadow-lg p-6 mb-8">
-               <div class="flex items-center justify-between mb-6">
-                  <button id="prevMonth" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all">
-                     ← Anterior
-                  </button>
-                  <h2 id="currentMonth" class="text-2xl font-bold text-gray-800"></h2>
-                  <button id="nextMonth" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all">
-                     Siguiente →
-                  </button>
-               </div>
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-dark mb-3">📅 Calendario de Efemérides</h1>
+            <p class="lead text-muted">Descubre eventos históricos y celebraciones importantes</p>
+        </div>
 
-               <!-- Calendar Grid -->
-               <div class="grid grid-cols-7 gap-2 mb-4">
-                  <div class="text-center font-semibold text-gray-600 py-2">Dom</div>
-                  <div class="text-center font-semibold text-gray-600 py-2">Lun</div>
-                  <div class="text-center font-semibold text-gray-600 py-2">Mar</div>
-                  <div class="text-center font-semibold text-gray-600 py-2">Mié</div>
-                  <div class="text-center font-semibold text-gray-600 py-2">Jue</div>
-                  <div class="text-center font-semibold text-gray-600 py-2">Vie</div>
-                  <div class="text-center font-semibold text-gray-600 py-2">Sáb</div>
-               </div>
-               <div id="calendarGrid" class="grid grid-cols-7 gap-2"></div>
-         </div>
+        <!-- Calendar Navigation -->
+        <div class="card card-custom mb-4">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <button id="prevMonth" class="btn btn-gradient px-4">
+                        <i class="bi bi-chevron-left"></i> Anterior
+                    </button>
+                    <h2 id="currentMonth" class="h3 fw-bold text-dark mb-0"></h2>
+                    <button id="nextMonth" class="btn btn-gradient px-4">
+                        Siguiente <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
 
-         <!-- Efemérides del día seleccionado -->
-         <div class="bg-white rounded-2xl shadow-lg p-6">
-               <h3 id="selectedDate" class="text-2xl font-bold text-gray-800 mb-4">Selecciona una fecha</h3>
-               <div id="efemeridesContainer" class="space-y-4">
-                  <p class="text-gray-500 text-center py-8">Haz clic en una fecha del calendario para ver las efemérides</p>
-               </div>
-         </div>
+                <!-- Calendar Grid -->
+                <div class="calendar-grid mb-3">
+                    <div class="calendar-header">Dom</div>
+                    <div class="calendar-header">Lun</div>
+                    <div class="calendar-header">Mar</div>
+                    <div class="calendar-header">Mié</div>
+                    <div class="calendar-header">Jue</div>
+                    <div class="calendar-header">Vie</div>
+                    <div class="calendar-header">Sáb</div>
+                </div>
+                <div id="calendarGrid" class="calendar-grid"></div>
+            </div>
+        </div>
 
-         <script>
-               // Base de datos de efemérides (se cargará desde archivo externo)
-               let efemerides = {};
-               
-               // Datos de ejemplo embebidos como respaldo
-               const efemeridesRespaldo = {
-                  "1-1": [
-                     { tipo: "Mundial", evento: "Año Nuevo", descripcion: "Celebración del inicio del nuevo año en el calendario gregoriano" },
-                     { tipo: "Historia", evento: "Creación de la bandera de Cuba (1902)", descripcion: "Se adopta oficialmente la bandera cubana" }
-                  ],
-                  "1-6": [
-                     { tipo: "Religioso", evento: "Día de los Reyes Magos", descripcion: "Celebración cristiana de la Epifanía" }
-                  ],
-                  "2-14": [
-                     { tipo: "Mundial", evento: "Día de San Valentín", descripcion: "Día del amor y la amistad celebrado mundialmente" }
-                  ],
-                  "3-8": [
-                     { tipo: "Mundial", evento: "Día Internacional de la Mujer", descripcion: "Conmemoración de la lucha por los derechos de las mujeres" }
-                  ],
-                  "3-21": [
-                     { tipo: "Astronómico", evento: "Equinoccio de Primavera", descripcion: "Inicio de la primavera en el hemisferio norte" }
-                  ],
-                  "4-22": [
-                     { tipo: "Mundial", evento: "Día de la Tierra", descripcion: "Día dedicado a la conciencia ambiental y protección del planeta" }
-                  ],
-                  "4-23": [
-                     { tipo: "Cultural", evento: "Día Mundial del Libro", descripcion: "Celebración de la lectura y los derechos de autor" }
-                  ],
-                  "5-1": [
-                     { tipo: "Mundial", evento: "Día del Trabajador", descripcion: "Conmemoración de los derechos laborales" }
-                  ],
-                  "5-5": [
-                     { tipo: "México", evento: "Batalla de Puebla (1862)", descripcion: "Victoria mexicana sobre el ejército francés" }
-                  ],
-                  "6-21": [
-                     { tipo: "Astronómico", evento: "Solsticio de Verano", descripcion: "Día más largo del año en el hemisferio norte" }
-                  ],
-                  "7-4": [
-                     { tipo: "Estados Unidos", evento: "Día de la Independencia", descripcion: "Declaración de independencia de Estados Unidos (1776)" }
-                  ],
-                  "7-20": [
-                     { tipo: "Espacial", evento: "Llegada del hombre a la Luna (1969)", descripcion: "Neil Armstrong y Buzz Aldrin caminan en la Luna" }
-                  ],
-                  "8-15": [
-                     { tipo: "Religioso", evento: "Asunción de la Virgen María", descripcion: "Festividad católica" }
-                  ],
-                  "9-16": [
-                     { tipo: "México", evento: "Grito de Independencia (1810)", descripcion: "Inicio de la Guerra de Independencia de México" }
-                  ],
-                  "9-23": [
-                     { tipo: "Astronómico", evento: "Equinoccio de Otoño", descripcion: "Inicio del otoño en el hemisferio norte" }
-                  ],
-                  "10-12": [
-                     { tipo: "América", evento: "Día de la Raza", descripcion: "Conmemoración del encuentro entre dos mundos (1492)" }
-                  ],
-                  "10-31": [
-                     { tipo: "Cultural", evento: "Halloween", descripcion: "Festividad de origen celta, noche de brujas" }
-                  ],
-                  "11-1": [
-                     { tipo: "México", evento: "Día de Todos los Santos", descripcion: "Celebración del Día de Muertos en México" }
-                  ],
-                  "11-2": [
-                     { tipo: "México", evento: "Día de los Fieles Difuntos", descripcion: "Día de Muertos, tradición mexicana patrimonio de la humanidad" }
-                  ],
-                  "12-21": [
-                     { tipo: "Astronómico", evento: "Solsticio de Invierno", descripcion: "Día más corto del año en el hemisferio norte" }
-                  ],
-                  "12-25": [
-                     { tipo: "Religioso", evento: "Navidad", descripcion: "Celebración del nacimiento de Jesucristo" }
-                  ]
-               };
+        <!-- Efemérides del día seleccionado -->
+        <div class="card card-custom">
+            <div class="card-body p-4">
+                <h3 id="selectedDate" class="h4 fw-bold text-dark mb-4">Selecciona una fecha</h3>
+                <div id="efemeridesContainer">
+                    <div class="text-center py-5">
+                        <p class="text-muted">Haz clic en una fecha del calendario para ver las efemérides</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-               // Función para cargar efemérides desde archivo externo
-               async function cargarEfemerides() {
-                  try {
-                     // Intentar cargar desde archivo JSON externo
-                     const response = await fetch('efemerides.json');
-                     if (response.ok) {
-                           const data = await response.json();
-                           efemerides = data;
-                           console.log('✅ Efemérides cargadas desde archivo externo');
-                           mostrarMensajeEstado('Datos cargados desde archivo externo', 'success');
-                     } else {
-                           throw new Error('Archivo no encontrado');
-                     }
-                  } catch (error) {
-                     // Si falla, usar datos de respaldo
-                     efemerides = efemeridesRespaldo;
-                     console.log('⚠️ Usando datos de respaldo embebidos');
-                     mostrarMensajeEstado('Usando datos de ejemplo (archivo externo no encontrado)', 'warning');
-                  }
-                  
-                  // Actualizar calendario después de cargar datos
-                  updateCalendar();
-               }
+        <!-- Información sobre el archivo de datos -->
+        <div class="card info-card mt-4">
+            <div class="card-body p-4">
+                <h3 class="h5 fw-bold text-dark mb-4">
+                    <i class="bi bi-folder2-open"></i> Configuración del Archivo de Datos
+                </h3>
+                <div class="small text-muted">
+                    <p><strong>Archivo requerido:</strong> <code class="bg-light px-2 py-1 rounded">efemerides.json</code></p>
+                    <p><strong>Ubicación:</strong> En la misma carpeta que este archivo HTML</p>
+                    <div class="bg-white p-3 rounded border">
+                        <p class="fw-semibold mb-2">Formato del archivo JSON:</p>
+                        <pre class="small bg-light p-3 rounded overflow-auto">{
+  "1-1": [
+    {
+      "tipo": "Mundial",
+      "evento": "Año Nuevo",
+      "descripcion": "Celebración del inicio del nuevo año"
+    },
+    {
+      "tipo": "Historia",
+      "evento": "Otro evento del mismo día",
+      "descripcion": "Puedes agregar múltiples eventos por fecha"
+    }
+  ],
+  "12-25": [
+    {
+      "tipo": "Religioso", 
+      "evento": "Navidad",
+      "descripcion": "Celebración del nacimiento de Jesucristo"
+    },
+    {
+      "tipo": "Historia",
+      "evento": "Coronación de Carlomagno (800)",
+      "descripcion": "Emperador del Sacro Imperio Romano"
+    }
+  ]
+}</pre>
+                    </div>
+                    <p class="small text-secondary mt-2">
+                        💡 <strong>Nota:</strong> Si no se encuentra el archivo externo, se usarán los datos de ejemplo incluidos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Base de datos de efemérides (se cargará desde archivo externo)
+        let efemerides = {};
+        
+        // Datos de ejemplo embebidos como respaldo
+        const efemeridesRespaldo = {
+            "1-1": [
+                { tipo: "Mundial", evento: "Año Nuevo", descripcion: "Celebración del inicio del nuevo año en el calendario gregoriano" },
+                { tipo: "Historia", evento: "Creación de la bandera de Cuba (1902)", descripcion: "Se adopta oficialmente la bandera cubana" },
+                { tipo: "Religioso", evento: "Circuncisión de Jesús", descripcion: "Festividad cristiana celebrada ocho días después de Navidad" }
+            ],
+            "1-6": [
+                { tipo: "Religioso", evento: "Día de los Reyes Magos", descripcion: "Celebración cristiana de la Epifanía" }
+            ],
+            "2-14": [
+                { tipo: "Mundial", evento: "Día de San Valentín", descripcion: "Día del amor y la amistad celebrado mundialmente" }
+            ],
+            "3-8": [
+                { tipo: "Mundial", evento: "Día Internacional de la Mujer", descripcion: "Conmemoración de la lucha por los derechos de las mujeres" }
+            ],
+            "3-21": [
+                { tipo: "Astronómico", evento: "Equinoccio de Primavera", descripcion: "Inicio de la primavera en el hemisferio norte" }
+            ],
+            "4-22": [
+                { tipo: "Mundial", evento: "Día de la Tierra", descripcion: "Día dedicado a la conciencia ambiental y protección del planeta" }
+            ],
+            "4-23": [
+                { tipo: "Cultural", evento: "Día Mundial del Libro", descripcion: "Celebración de la lectura y los derechos de autor" }
+            ],
+            "5-1": [
+                { tipo: "Mundial", evento: "Día del Trabajador", descripcion: "Conmemoración de los derechos laborales" }
+            ],
+            "5-5": [
+                { tipo: "México", evento: "Batalla de Puebla (1862)", descripcion: "Victoria mexicana sobre el ejército francés" },
+                { tipo: "Europa", evento: "Día de la Liberación (Países Bajos)", descripcion: "Fin de la ocupación nazi en los Países Bajos (1945)" }
+            ],
+            "6-21": [
+                { tipo: "Astronómico", evento: "Solsticio de Verano", descripcion: "Día más largo del año en el hemisferio norte" }
+            ],
+            "7-4": [
+                { tipo: "Estados Unidos", evento: "Día de la Independencia", descripcion: "Declaración de independencia de Estados Unidos (1776)" }
+            ],
+            "7-20": [
+                { tipo: "Espacial", evento: "Llegada del hombre a la Luna (1969)", descripcion: "Neil Armstrong y Buzz Aldrin caminan en la Luna" }
+            ],
+            "8-15": [
+                { tipo: "Religioso", evento: "Asunción de la Virgen María", descripcion: "Festividad católica" }
+            ],
+            "9-16": [
+                { tipo: "México", evento: "Grito de Independencia (1810)", descripcion: "Inicio de la Guerra de Independencia de México" }
+            ],
+            "9-23": [
+                { tipo: "Astronómico", evento: "Equinoccio de Otoño", descripcion: "Inicio del otoño en el hemisferio norte" }
+            ],
+            "10-12": [
+                { tipo: "América", evento: "Día de la Raza", descripcion: "Conmemoración del encuentro entre dos mundos (1492)" }
+            ],
+            "10-31": [
+                { tipo: "Cultural", evento: "Halloween", descripcion: "Festividad de origen celta, noche de brujas" }
+            ],
+            "11-1": [
+                { tipo: "México", evento: "Día de Todos los Santos", descripcion: "Celebración del Día de Muertos en México" }
+            ],
+            "11-2": [
+                { tipo: "México", evento: "Día de los Fieles Difuntos", descripcion: "Día de Muertos, tradición mexicana patrimonio de la humanidad" }
+            ],
+            "12-21": [
+                { tipo: "Astronómico", evento: "Solsticio de Invierno", descripcion: "Día más corto del año en el hemisferio norte" }
+            ],
+            "12-25": [
+                { tipo: "Religioso", evento: "Navidad", descripcion: "Celebración del nacimiento de Jesucristo" },
+                { tipo: "Historia", evento: "Coronación de Carlomagno (800)", descripcion: "Carlomagno es coronado emperador del Sacro Imperio Romano" },
+                { tipo: "Astronomía", evento: "Lanzamiento del Telescopio James Webb (2021)", descripcion: "Inicio de la misión del telescopio espacial más avanzado" }
+            ]
+        };
+
+        // Función para cargar efemérides desde archivo externo
+        async function cargarEfemerides() {
+            try {
+                // Intentar cargar desde archivo JSON externo
+                const response = await fetch('efemerides.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    efemerides = data;
+                    console.log('✅ Efemérides cargadas desde archivo externo');
+                    mostrarMensajeEstado('Datos cargados desde archivo externo', 'success');
+                } else {
+                    throw new Error('Archivo no encontrado');
+                }
+            } catch (error) {
+                // Si falla, usar datos de respaldo
+                efemerides = efemeridesRespaldo;
+                console.log('⚠️ Usando datos de respaldo embebidos');
+                mostrarMensajeEstado('Usando datos de ejemplo (archivo externo no encontrado)', 'warning');
+            }
+            
+            // Actualizar calendario después de cargar datos
+            updateCalendar();
+        }
 
         // Función para mostrar mensajes de estado
         function mostrarMensajeEstado(mensaje, tipo) {
-            const container = document.querySelector('.container');
             const alert = document.createElement('div');
-            alert.className = `fixed top-4 right-4 px-4 py-2 rounded-lg text-white font-medium z-50 ${
-                tipo === 'success' ? 'bg-green-500' : 'bg-yellow-500'
-            }`;
+            alert.className = `alert alert-custom ${tipo === 'success' ? 'alert-success' : 'alert-warning'}`;
             alert.textContent = mensaje;
             
             document.body.appendChild(alert);
@@ -271,7 +381,7 @@
             // Días vacíos al inicio
             for (let i = 0; i < firstDay; i++) {
                 const emptyDay = document.createElement('div');
-                emptyDay.className = 'h-12';
+                emptyDay.style.height = '48px';
                 calendarGrid.appendChild(emptyDay);
             }
             
@@ -281,9 +391,7 @@
                 const dateKey = `${month + 1}-${day}`;
                 const hasEvents = efemerides[dateKey];
                 
-                dayElement.className = `calendar-day h-12 flex items-center justify-center rounded-lg cursor-pointer ${
-                    hasEvents ? 'has-event' : 'bg-gray-50 hover:bg-gray-100'
-                }`;
+                dayElement.className = `calendar-day ${hasEvents ? 'has-event' : ''}`;
                 dayElement.textContent = day;
                 
                 dayElement.addEventListener('click', () => {
@@ -318,22 +426,20 @@
             
             if (dayEfemerides && dayEfemerides.length > 0) {
                 container.innerHTML = dayEfemerides.map(efemeride => `
-                    <div class="efemeride-card bg-gradient-to-r from-blue-50 to-purple-50 p-4 rounded-xl border-l-4 border-blue-500">
-                        <div class="flex items-center mb-2">
-                            <span class="bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-semibold mr-3">
-                                ${efemeride.tipo}
-                            </span>
-                            <h4 class="font-bold text-gray-800">${efemeride.evento}</h4>
+                    <div class="efemeride-card p-3 rounded mb-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-primary me-3">${efemeride.tipo}</span>
+                            <h5 class="fw-bold text-dark mb-0">${efemeride.evento}</h5>
                         </div>
-                        <p class="text-gray-600">${efemeride.descripcion}</p>
+                        <p class="text-muted mb-0">${efemeride.descripcion}</p>
                     </div>
                 `).join('');
             } else {
                 container.innerHTML = `
-                    <div class="text-center py-8">
-                        <div class="text-6xl mb-4">📅</div>
-                        <p class="text-gray-500">No hay efemérides registradas para esta fecha</p>
-                        <p class="text-sm text-gray-400 mt-2">¡Pero cada día es especial por sí mismo!</p>
+                    <div class="text-center py-5">
+                        <div class="display-1 mb-3">📅</div>
+                        <p class="text-muted">No hay efemérides registradas para esta fecha</p>
+                        <p class="small text-secondary">¡Pero cada día es especial por sí mismo!</p>
                     </div>
                 `;
             }
@@ -355,42 +461,5 @@
             cargarEfemerides();
         });
     </script>
-    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97cfa753407fa777',t:'MTc1NzUxNDk0NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
-
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-8 offset-md-2">
-                     <ul class="location_icon">
-                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> Andrés Arguibel 2532, B1686 William C. Morris, Provincia de Buenos Aires</li>
-                        <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +01 1234567890</li>
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> pyvhurlingham@gmail.com</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2024 All Rights Reserved. </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97d2ea3e2045a29b',t:'MTc1NzU0OTE0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
