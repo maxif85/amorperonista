@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Amor Peronista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="/images/logo.png" alt="Logo Amor Peronista" width="40" height="40" class="me-2">
+                <span class="fw-bold">Amor Peronista</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="efemerides.html">Efemérides</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="formacionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Formación
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="formacionDropdown">
+                            <li><a class="dropdown-item" href="#">Formación Política</a></li>
+                            <li><a class="dropdown-item" href="#">Charlas Abiertas a la Comunidad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="actividades.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sumate a militar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="section-title">Nuestros Proyectos</h1>
+            <p class="section-subtitle">
+                Iniciativas para transformar Hurlingham
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    
+                    <!-- Proyecto 1 -->
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject('project1')">
+                            <span class="project-category">Desarrollo Social</span>
+                            <span class="status-badge status-en-desarrollo">En Desarrollo</span>
+                            <h3 class="project-title">
+                                Centros Comunitarios de Formación Integral
+                                <i class="bi bi-chevron-down expand-icon" id="icon-project1"></i>
+                            </h3>
+                            <p class="project-summary">
+                                Espacios barriales para educación, capacitación laboral y contención social
+                            </p>
+                        </div>
+                        <div class="project-content" id="content-project1">
+                            <div class="project-details">
+                                <h6>Descripción del Proyecto</h6>
+                                <p>Los Centros Comunitarios de Formación Integral son espacios físicos ubicados estratégicamente en barrios populares, diseñados para brindar educación, capacitación laboral y contención social a las familias trabajadoras.</p>
+                                
+                                <h6>Objetivos Principales</h6>
+                                <ul>
+                                    <li>Crear espacios de formación técnica y profesional gratuitos</li>
+                                    <li>Ofrecer apoyo escolar para niños y adolescentes</li>
+                                    <li>Desarrollar talleres de oficios y emprendedurismo</li>
+                                    <li>Brindar contención psicosocial a las familias</li>
+                                    <li>Fortalecer el tejido social comunitario</li>
+                                </ul>
+                                
+                                <h6>Beneficiarios</h6>
+                                <p>Familias de barrios populares, jóvenes sin oportunidades laborales, adultos que buscan capacitarse, niños que necesitan apoyo escolar.</p>
+                                
+                                <h6>Estado Actual</h6>
+                                <p>En fase de planificación. Estamos identificando los primeros tres barrios donde implementar el proyecto piloto y gestionando alianzas con organizaciones locales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject('project2')">
+                            <span class="project-category">Economía Popular</span>
+                            <span class="status-badge status-propuesta">Propuesta</span>
+                            <h3 class="project-title">
+                                Red de Cooperativas Productivas
+                                <i class="bi bi-chevron-down expand-icon" id="icon-project2"></i>
+                            </h3>
+                            <p class="project-summary">
+                                Fortalecimiento del sector cooperativo para generar trabajo digno y soberanía económica
+                            </p>
+                        </div>
+                        <div class="project-content" id="content-project2">
+                            <div class="project-details">
+                                <h6>Descripción del Proyecto</h6>
+                                <p>Impulsar la creación y fortalecimiento de cooperativas de trabajo en sectores estratégicos como agricultura, textil, construcción y servicios, promoviendo la economía social y solidaria.</p>
+                                
+                                <h6>Componentes del Proyecto</h6>
+                                <ul>
+                                    <li>Asesoramiento legal y contable para nuevas cooperativas</li>
+                                    <li>Capacitación en gestión cooperativa y liderazgo</li>
+                                    <li>Acceso a microcréditos y financiamiento</li>
+                                    <li>Creación de una red de comercialización conjunta</li>
+                                    <li>Desarrollo de marca colectiva "Hecho en Cooperativa"</li>
+                                </ul>
+                                
+                                <h6>Impacto Esperado</h6>
+                                <p>Generar 500 puestos de trabajo genuino en el primer año, fortalecer 20 cooperativas existentes y crear 10 nuevas cooperativas en diferentes sectores productivos.</p>
+                                
+                                <h6>Próximos Pasos</h6>
+                                <p>Presentación del proyecto ante organismos de financiamiento y búsqueda de alianzas con universidades para el componente de capacitación.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject('project3')">
+                            <span class="project-category">Participación Ciudadana</span>
+                            <span class="status-badge status-implementado">Implementado</span>
+                            <h3 class="project-title">
+                                Asambleas Barriales Participativas
+                                <i class="bi bi-chevron-down expand-icon" id="icon-project3"></i>
+                            </h3>
+                            <p class="project-summary">
+                                Espacios de democracia directa para que los vecinos decidan sobre su barrio
+                            </p>
+                        </div>
+                        <div class="project-content" id="content-project3">
+                            <div class="project-details">
+                                <h6>Descripción del Proyecto</h6>
+                                <p>Las Asambleas Barriales son encuentros mensuales donde los vecinos se reúnen para discutir, proponer y decidir sobre las problemáticas y necesidades de su barrio, ejerciendo la democracia participativa.</p>
+                                
+                                <h6>Metodología</h6>
+                                <ul>
+                                    <li>Reuniones mensuales en espacios comunitarios</li>
+                                    <li>Agenda abierta construida por los propios vecinos</li>
+                                    <li>Facilitación rotativa entre los participantes</li>
+                                    <li>Toma de decisiones por consenso</li>
+                                    <li>Seguimiento de acuerdos y compromisos</li>
+                                </ul>
+                                
+                                <h6>Logros Alcanzados</h6>
+                                <p>En funcionamiento en 8 barrios con participación promedio de 45 vecinos por asamblea. Se han resuelto 23 problemáticas barriales y se han presentado 12 proyectos ante el municipio.</p>
+                                
+                                <h6>Temas Abordados</h6>
+                                <ul>
+                                    <li>Mejoras en alumbrado público y seguridad</li>
+                                    <li>Gestión de residuos y reciclaje</li>
+                                    <li>Espacios verdes y recreativos</li>
+                                    <li>Transporte público y accesibilidad</li>
+                                    <li>Actividades culturales y deportivas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 4 -->
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject('project4')">
+                            <span class="project-category">Soberanía Alimentaria</span>
+                            <span class="status-badge status-en-desarrollo">En Desarrollo</span>
+                            <h3 class="project-title">
+                                Huertas Comunitarias Urbanas
+                                <i class="bi bi-chevron-down expand-icon" id="icon-project4"></i>
+                            </h3>
+                            <p class="project-summary">
+                                Producción local de alimentos sanos y accesibles en espacios urbanos
+                            </p>
+                        </div>
+                        <div class="project-content" id="content-project4">
+                            <div class="project-details">
+                                <h6>Descripción del Proyecto</h6>
+                                <p>Desarrollo de huertas comunitarias en terrenos baldíos, plazas y espacios públicos para producir alimentos frescos, promover la soberanía alimentaria y crear vínculos comunitarios.</p>
+                                
+                                <h6>Objetivos Específicos</h6>
+                                <ul>
+                                    <li>Producir alimentos sanos y accesibles para las familias</li>
+                                    <li>Capacitar en técnicas de agricultura urbana</li>
+                                    <li>Recuperar espacios públicos abandonados</li>
+                                    <li>Promover la educación ambiental</li>
+                                    <li>Generar ingresos complementarios para las familias</li>
+                                </ul>
+                                
+                                <h6>Avances del Proyecto</h6>
+                                <p>Se han establecido 5 huertas comunitarias que abastecen a 80 familias. Capacitamos a 120 personas en técnicas de cultivo orgánico y compostaje.</p>
+                                
+                                <h6>Próximas Metas</h6>
+                                <ul>
+                                    <li>Expandir a 10 huertas más en el próximo semestre</li>
+                                    <li>Crear un mercado de intercambio de productos</li>
+                                    <li>Desarrollar un programa de semillas nativas</li>
+                                    <li>Implementar sistemas de riego sustentable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 5 -->
+                    <div class="project-card">
+                        <div class="project-header" onclick="toggleProject('project5')">
+                            <span class="project-category">Cultura Popular</span>
+                            <span class="status-badge status-propuesta">Propuesta</span>
+                            <h3 class="project-title">
+                                Festival de Arte y Memoria Peronista
+                                <i class="bi bi-chevron-down expand-icon" id="icon-project5"></i>
+                            </h3>
+                            <p class="project-summary">
+                                Evento anual para celebrar la cultura popular y la memoria histórica del movimiento
+                            </p>
+                        </div>
+                        <div class="project-content" id="content-project5">
+                            <div class="project-details">
+                                <h6>Descripción del Proyecto</h6>
+                                <p>Festival anual que combine expresiones artísticas populares con la recuperación de la memoria histórica del peronismo, fortaleciendo la identidad cultural y política de nuestro movimiento.</p>
+                                
+                                <h6>Actividades Propuestas</h6>
+                                <ul>
+                                    <li>Espectáculos de música folklórica y popular</li>
+                                    <li>Obras de teatro sobre la historia peronista</li>
+                                    <li>Exposiciones de arte y fotografía histórica</li>
+                                    <li>Talleres de murga y danza popular</li>
+                                    <li>Conferencias sobre doctrina justicialista</li>
+                                    <li>Feria de artesanías y productos cooperativos</li>
+                                </ul>
+                                
+                                <h6>Objetivos Culturales</h6>
+                                <p>Fortalecer la identidad peronista en las nuevas generaciones, promover el arte popular como herramienta de transformación social y crear un espacio de encuentro para toda la comunidad.</p>
+                                
+                                <h6>Planificación</h6>
+                                <p>El festival se realizaría durante la semana del 17 de octubre, con actividades gratuitas en espacios públicos. Estamos gestionando el apoyo de artistas comprometidos y organizaciones culturales.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="/images/logo.png" alt="Logo" width="40" height="40" class="me-2">
+                        <span class="fw-bold fs-5">Amor Peronista</span>
+                    </div>
+                    <p class="text-light">
+                        Agrupación política peronista en Hurlingham.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Inicio</a></li>
+                        <li class="mb-2"><a href="/efemerides.html">Efemérides</a></li>
+                        <li class="mb-2"><a href="#">Formación</a></li>
+                        <li class="mb-2"><a href="/actividades.html">Actividades</a></li>
+                        <li class="mb-2"><a href="#">Sumate a militar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Principios</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Justicia Social</a></li>
+                        <li class="mb-2"><a href="#">Independencia Económica</a></li>
+                        <li class="mb-2"><a href="#">Soberanía Política</a></li>
+                        <li class="mb-2"><a href="#">Doctrina Peronista</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h5>Contacto</h5>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-envelope me-2"></i>
+                        pyvhurlingham@gmail.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-telephone me-2"></i>
+                        +54 11 1234-5678
+                    </p>
+                    <p class="text-light mb-3">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Andres Arguibel 2532, Hurlingham, Buenos Aires, Argentina
+                    </p>
+                    
+                    <!-- Mini Mapa de Google Maps -->
+                    <div class="mb-3">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.2240044498946!2d-58.65204575248274!3d-34.581497532971866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbfff5d4e97df%3A0x3a4b19571e0470c0!2sPrincipios%20y%20Valores%20Hurlingham!5e0!3m2!1ses-419!2sar!4v1757853877120!5m2!1ses-419!2sar" 
+                            width="100%" 
+                            height="150" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div>
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-5"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-youtube fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">
+                        © 2025 Amor Peronista. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light me-3">Política de Privacidad</a>
+                    <a href="#" class="text-light">Términos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleProject(projectId) {
+            const content = document.getElementById('content-' + projectId);
+            const icon = document.getElementById('icon-' + projectId);
+            
+            if (content.classList.contains('expanded')) {
+                content.classList.remove('expanded');
+                icon.classList.remove('rotated');
+            } else {
+                // Cerrar otros proyectos abiertos
+                document.querySelectorAll('.project-content.expanded').forEach(el => {
+                    el.classList.remove('expanded');
+                });
+                document.querySelectorAll('.expand-icon.rotated').forEach(el => {
+                    el.classList.remove('rotated');
+                });
+                
+                // Abrir el proyecto seleccionado
+                content.classList.add('expanded');
+                icon.classList.add('rotated');
+            }
+        }
+
+        function showCalendar() {
+            alert('¡Navegando al calendario de efemérides peronistas! En una aplicación real, esto te llevaría a la página del calendario.');
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97e8491ce0889b20',t:'MTc1Nzc3MzIyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

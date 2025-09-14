@@ -1,22 +1,2385 @@
 {
-    "9-2": [
-      {
-        "tipo": "Gobierno",
-        "evento": "Banco de Crédito Industrial y Fomento Minero",
-        "descripcion": "Comienza a operar el Banco de Crédito Industrial y Fomento Minero. - 1944"
-      },
-      {
-        "tipo": "Gobierno",
-        "evento": "Curso de Elevación Cultural Superior",
-        "descripcion": "Perón inaugura el primer curso de Elevación Cultural Superior para los agregados obreros a las Embajadas en el Exterior. - 1946"
-      }
-    ],
-    "9-3": [
-      {
-        "tipo": "Gobierno",
-        "evento": "Compañía Unión Telefónica al estado",
-        "descripcion": "Se firma la transferencia de la Compañía Unión Telefónica de la ITT al Estado. - 1946"
-      }
-    ]
-  }
-  
+  "1-1": [
+    {
+      "tipo": "Gobierno",
+      "evento": "Ampliación de la jubilación obligatoria",
+      "descripcion": "Por iniciativa de la Secretaría de Trabajo y Previsión a cargo del Coronel Juan Perón, se amplía la jubilación obligatoria para todos los trabajadores en relación de dependencia. - 1945"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Primer Plan Quinquenal",
+      "descripcion": "Inicio del primer Plan Quinquenal. - 1947"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Año del Libertador General San Martín",
+      "descripcion": "1950 declarado Año del Libertador General San Martín. - 1950"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Ex Corporación de Transportes de la Ciudad de Buenos Aires",
+      "descripcion": "Comienza el año, pasando a poder del Estado la ex Corporación de Transportes de la Ciudad de Buenos Aires. - 1952"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Primer contacto con la Resistencia",
+      "descripcion": "Desde Colón (Panamá) Perón establece el primer contacto con la Resistencia y envía instrucciones reservadas. - 1956"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Año de los Municipios",
+      "descripcion": "1998 declarado Año de los Municipios. - 1998"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Año de la Exportación",
+      "descripcion": "1999 declarado Año de la Exportación. - 1999"
+    }
+  ],
+  "1-2": [
+    {
+      "tipo": "Religioso",
+      "evento": "Mensaje del Papa Pío XII a Eva Perón",
+      "descripcion": "El Papa Pío XII escribía un mensaje a la señora Eva Perón, bendiciéndola y elogiando la caritativa creación e invocando las gracias celestiales sobre su Institución de Ayuda Social, y la labor que realiza. - 1949"
+    }
+  ],
+  "1-5": [
+    {
+      "tipo": "Económico",
+      "evento": "Crédito para maquinaria agrícola",
+      "descripcion": "Por decisión del gobierno es otorgado (por intermedio del Banco de Crédito Industrial) un crédito de 15 millones para la fabricación de maquinaria agrícola. - 1950"
+    }
+  ],
+  "1-7": [
+    {
+      "tipo": "Sindical",
+      "evento": "CGT se reúne con Lanusse",
+      "descripcion": "La C.G.T. se reúne con el General Lanusse reclamándole la derogación de las leyes represivas, una política efectiva de viviendas, y la reforma de la ley de quiebras para proteger a los trabajadores. La Central Obrera concurre a la entrevista muy presionada por las bases, ante el constante deterioro de los salarios. - 1972"
+    }
+  ],
+  "1-8": [
+    {
+      "tipo": "Judicial",
+      "evento": "Creación de los Tribunales del Trabajo",
+      "descripcion": "Se crean los Tribunales del Trabajo que tienen jurisdicción en los conflictos obreros-patronales, para solucionar los problemas generados en este ámbito. - 1945"
+    }
+  ],
+  "1-9": [
+    {
+      "tipo": "Educación",
+      "evento": "Campaña de alfabetización",
+      "descripcion": "El Ministerio de Educación anuncia que se designarán 3.400 maestros, a fin de que colaboren en la campaña de alfabetización que va a emprenderse en toda la República. - 1950"
+    },
+    {
+      "tipo": "Cultural",
+      "evento": "Música nacional en radio",
+      "descripcion": "En los programas musicales que se transmitan por radio deberá contemplarse como mínimo la propagación de un 50% de música nacional. - 1950"
+    }
+  ],
+  "1-11": [
+    {
+      "tipo": "Industrial",
+      "evento": "Fábrica Militar de Tolueno sintético",
+      "descripcion": "Perón y Evita inauguran en Campana la Fábrica Militar de Tolueno sintético. - 1952"
+    }
+  ],
+  "1-14": [
+    {
+      "tipo": "Político",
+      "evento": "Partido Peronista",
+      "descripcion": "Se crea la primera Junta Nacional y el Consejo Superior del Partido Peronista. - 1947"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Escuelas sindicales",
+      "descripcion": "Son inauguradas más de 40 escuelas sindicales en todo el país. Presiden el acto en el local de la CGT. Perón y Evita. - 1951"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Segundo Plan Quinquenal",
+      "descripcion": "El Gral. Perón habla a los trabajadores en el curso de interpretación, aplicación y difusión destinado a conocer y aplicar el 2° Plan Quinquenal. - 1953"
+    }
+  ],
+  "1-15": [
+    {
+      "tipo": "Desastre natural",
+      "evento": "Terremoto de San Juan",
+      "descripcion": "San Juan es destruido por un terremoto que conmueve al país; se habla de 2000 muertos y más de 14.000 heridos. Cerca del 90% de la construcción urbana es apenas un montón de ruinas. Toda la Nación se moviliza en ayuda de las víctimas. La Secretaría de Trabajo y Previsión organiza las tareas de apoyo y una gran colecta popular, recaudándose casi un millón de pesos por día. - 1944"
+    }
+  ],
+  "1-17": [
+    {
+      "tipo": "Sindical",
+      "evento": "Paro general contra Frondizi",
+      "descripcion": "A comienzo del año varios dirigentes obreros viajan para entrevistarse con Perón en el exilio. El 17 se paraliza el país: gráficos, bancarios, portuarios gastronómicos, metalúrgicos, transportes, textiles, petroleros y demás gremios, realiza un paro general de 48 horas en repudio al gobierno de Frondizi. - 1959"
+    }
+  ],
+  "1-19": [
+    {
+      "tipo": "Industrial",
+      "evento": "Fábrica de automotores en Córdoba",
+      "descripcion": "Queda formalizada la instalación de una fábrica de automotores en Córdoba al firmarse un convenio entre el IAME y la Kaiser. Producirá camiones, autos, jeeps, camionetas y demás vehículos, que deberán ser totalmente argentinos. - 1955"
+    }
+  ],
+  "1-20": [
+    {
+      "tipo": "Diplomático",
+      "evento": "Condecoración italiana a Perón",
+      "descripcion": "Ceremonia en la cual Arpesani, embajador italiano en Buenos Aires, impone a Perón – por orden de su gobierno – la máxima distinción que otorga aquel país: las insignias de Caballero de la gran Cruz, con Gran Cordón al Mérito de la República Italiana. - 1954"
+    }
+  ],
+  "1-22": [
+    {
+      "tipo": "Personal",
+      "evento": "Encuentro entre Perón y Eva Duarte",
+      "descripcion": "En el festival del Luna Park por los damnificados del terremoto del 15/01/44 de San Juan el Coronel Juan Domingo Perón conoce a Eva Duarte. - 1944"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Elecciones en San Juan",
+      "descripcion": "Contundente triunfo del peronismo en las elecciones realizadas en la provincia de San Juan. - 1949"
+    }
+  ],
+  "1-24": [
+    {
+      "tipo": "Político",
+      "evento": "Convención Nacional Constituyente",
+      "descripcion": "Se reúne, en sesión preparatoria, la Convención Nacional Constituyente bajo la presidencia del Coronel Mercante, Gobernador de la provincia de Buenos Aires. - 1949"
+    }
+  ],
+  "1-26": [
+    {
+      "tipo": "Político",
+      "evento": "Personería jurídica del Partido Justicialista",
+      "descripcion": "El Partido Justicialista, como expresión orgánica del peronismo proscripto desde 1955 obtiene su personería jurídica. - 1972"
+    }
+  ],
+  "1-27": [
+    {
+      "tipo": "Político",
+      "evento": "Reforma de la Constitución",
+      "descripcion": "El Presidente Juan Domingo Perón (ante el cuerpo pleno de la Asamblea Constituyente) expone su pensamiento sobre la reforma a la Constitución Nacional, afirmando: 'Lo que el pueblo quiere es eliminar injusticias sociales'. - 1949"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Provincia Eva Perón",
+      "descripcion": "La nueva provincia de La Pampa recibe el nombre de Eva Perón a iniciativa de sus legisladores y queda aprobada su Constitución. - 1952"
+    }
+  ],
+  "1-28": [
+    {
+      "tipo": "Político",
+      "evento": "Elecciones en Mendoza",
+      "descripcion": "Triunfo rotundo del peronismo en las elecciones para legisladores, Intendentes y Concejales en la provincia de Mendoza. - 1951"
+    }
+  ],
+
+  "2-4": [
+    {
+      "tipo": "Económico",
+      "evento": "Expropiación Grupo Bemberg",
+      "descripcion": "Expropiación Grupo Bemberg. - 1955"
+    }
+  ],
+  "2-6": [
+    {
+      "tipo": "Gobierno",
+      "evento": "Nuevo régimen del Servicio Exterior",
+      "descripcion": "El gobierno de Juan D. Perón establece por ley un nuevo régimen del Servicio Exterior, creando la figura de los Agregados Obreros en las Embajadas. - 1947"
+    }
+  ],
+  "2-7": [
+    {
+      "tipo": "Gobierno",
+      "evento": "Comisión Nacional de Cooperación Económica",
+      "descripcion": "Queda constituida la Comisión Nacional de Cooperación Económica. El presidente Perón dirá: 'Debemos mantener una posición intermedia entre comunismo y capitalismo. El comunismo es el cataclismo económico y social provocado desde el gobierno. La antítesis de esto es el capitalismo que, por no ceder a la evolución de los tiempos, quedó rezagado en la historia'. - 1950"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Encuentros con Juventud Peronista",
+      "descripcion": "En la residencia Presidencial de Olivos, el Gral. Perón comienza una serie de encuentros con los dirigentes de la Juventud Peronista. - 1974"
+    }
+  ],
+  "2-12": [
+    {
+      "tipo": "Científico",
+      "evento": "Primera misión argentina a la Antártida",
+      "descripcion": "Parte a la Antártida la primera misión científica argentina, a bordo del Santa Micaela. Perón señala que 'empresas como ésta aseguran la posesión de nuestros derechos'. - 1951"
+    }
+  ],
+  "2-13": [
+    {
+      "tipo": "Gobierno",
+      "evento": "Nacionalización de los ferrocarriles",
+      "descripcion": "El Gral. Perón nacionaliza los ferrocarriles. - 1947"
+    }
+  ],
+  "2-16": [
+    {
+      "tipo": "Político",
+      "evento": "Encuentro Nacional de los Argentinos y Hora del Pueblo",
+      "descripcion": "Perón propicia la integración de un frente con todos los partidos políticos, el 'Encuentro Nacional de los Argentinos' y la 'Hora del Pueblo', sin fines electorales pero con la idea de influir en la aceleración del esquema electoral e imponer cambios profundos y definitivos en las orientaciones económicas y sociales. Además de los partidos políticos, componen este nucleamiento la C.G.T. y la C.G.E. - 1972"
+    }
+  ],
+  "2-18": [
+    {
+      "tipo": "Gobierno",
+      "evento": "Plan económico 1952",
+      "descripcion": "El gobierno anuncia el Plan económico. Al exponer los lineamientos generales del mismo para este año, el general Perón exhorta a elevar la producción y racionalizar el consumo. - 1952"
+    }
+  ],
+  "2-19": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Inauguración del Ferrocarril Transandino del Norte",
+      "descripcion": "Se inaugura el Ferrocarril Transandino del Norte (Salta – Antofagasta). - 1948"
+    }
+  ],
+  "2-20": [
+    {
+      "tipo": "Diplomático",
+      "evento": "Visita de Perón a Chile",
+      "descripcion": "Perón se entrevista en Chile con el general Ibañez. El pueblo chileno recibe al mandatario argentino con enormes manifestaciones de simpatía a lo largo de todo el país. - 1953"
+    }
+  ],
+  "2-21": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Construcción del gasoducto Comodoro Rivadavia – Buenos Aires",
+      "descripcion": "Se inicia la construcción del gasoducto Comodoro Rivadavia – Buenos Aires: 1.700 Km. de obra, sobre todo terreno y venciendo increíbles dificultades, incluso fuertes presiones extranjeras. - 1947"
+    },
+    {
+      "tipo": "Diplomático",
+      "evento": "Acta de Unión Económica ABC",
+      "descripcion": "El Gral. Perón firma en Santiago con el Presidente Gral. Carlos Ibañez del Campo las actas de la Unión Económica (base fundamental del proyecto de Perón llamado ABC – Argentina, Brasil y Chile –), antecedente más importante del Mercosur. El ABC no pudo funcionar por las presiones recibidas por Getulio Vargas (Presidente de Brasil), quien finalmente se suicida poco tiempo después. - 1953"
+    }
+  ],
+  "2-22": [
+    {
+      "tipo": "Cultural",
+      "evento": "Publicación de 'Donde Estuvo' y 'Azul y Blanco'",
+      "descripcion": "Aparición del folleto 'Donde Estuvo' firmado por Bill de Caledonia. Ese mismo día Perón da a conocer el libro 'Azul y Blanco', en respuesta al embajador norteamericano Spruile Braden. - 1946"
+    }
+  ],
+  "2-23": [
+    {
+      "tipo": "Político",
+      "evento": "Elecciones generales 1958",
+      "descripcion": "Elecciones generales con el peronismo proscrito. El general Perón ordena votar a Frondizi, quien gana. - 1958"
+    }
+  ],
+  "2-24": [
+    {
+      "tipo": "Político",
+      "evento": "Triunfo de Perón – Quijano",
+      "descripcion": "Triunfo rotundo de la fórmula Perón – Quijano por el 54% sobre Tamborini-Mosca. Coalición de fuerzas liberales y el partido comunista nucleadas en torno a la Unión Democrática. Contó con enorme ayuda económica de las distintas fuerzas empresariales, fuerte apoyo de los EEUU, la unanimidad del periodismo escrito y la mayoría de las radios. Por primera vez y en muchos años el país vota sin fraude, con tropas militares custodiando los comicios de toda la República. El recuento de votos emitidos se hará en la misma mesa electoral, apenas concluidos los comicios, frente a los fiscales de todos los partidos políticos. - 1946"
+    }
+  ],
+  "2-25": [
+    {
+      "tipo": "Político",
+      "evento": "Proclamación de los Derechos del Trabajador",
+      "descripcion": "Perón proclama los Derechos del Trabajador desde el Teatro Colón: derecho al trabajo, justa distribución, capacitación, condiciones dignas de trabajo y vida, salud, bienestar, seguridad social, protección de la familia, mejoramiento económico y defensa de intereses profesionales. Organizado por la C.G.T. - 1947"
+    }
+  ],
+  "2-26": [
+    {
+      "tipo": "Gobierno",
+      "evento": "Perón Ministro de Guerra y Complejo Eva Perón",
+      "descripcion": "El Presidente de la Nación General Edelmiro J. Farrel nombra al Coronel Perón Ministro de Guerra. En Las Cuevas, Mendoza, los Presidentes de Argentina y Chile inauguran el Complejo turístico Eva Perón, monumental Villa que ha construido la Fundación Social que lleva su nombre. - 1944 / 1953"
+    }
+  ],
+  "2-27": [
+    {
+      "tipo": "Político",
+      "evento": "Nacimiento de Manuel Ugarte",
+      "descripcion": "Nace Manuel Ugarte. Pensador profundo, escritor y ensayista. En su obra 'La Patria Grande' desarrolla con extraordinaria lucidez la necesidad de la Integración Latinoamericana. - 1875"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Derechos sobre Malvinas y Antártida",
+      "descripcion": "El gobierno reafirma los derechos de la Argentina sobre las Islas Malvinas y la Antártida. El gobierno dispone la entrega de 60 millones de pesos para edificios universitarios. - 1947"
+    },
+    {
+      "tipo": "Deportes",
+      "evento": "Velódromo municipal y conflicto obrero",
+      "descripcion": "Perón inaugura el Velódromo municipal para las pruebas de ciclismo de los Primeros Juegos Deportivos Panamericanos. Ese día, un conflicto entre obreros y el diario La Prensa termina a balazos. Hay varios heridos y un muerto. La CGT dispone un paro de repudio hacia el matutino. - 1951"
+    }
+  ],
+  "3-1": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Toma de posesión de los FF.CC",
+      "descripcion": "Se toma posesión de los FF.CC. - 1948"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Lucha con ocupaciones de la CGT",
+      "descripcion": "Comienza el plan de lucha con ocupaciones de las fuentes de trabajo y establecimientos patronales, dispuesto por la Confederación General del Trabajo. - 1964"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Paro general contra Onganía",
+      "descripcion": "Paro de 24 horas de la CGT, en contra de la política del gobierno de Onganía. Más de 300.000 empresas ocupadas por trabajadores. Acatamiento masivo. - 1967"
+    }
+  ],
+  "3-5": [
+    {
+      "tipo": "Electoral",
+      "evento": "Triunfo peronista en Entre Ríos",
+      "descripcion": "Rotundo triunfo peronista en elecciones de la provincia de Entre Ríos. - 1950"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Decreto 4161 de Aramburu-Rojas",
+      "descripcion": "La dictadura Militar de Aramburu-Rojas emite el Decreto 4161 prohibiendo propaganda peronista, uso de símbolos y nombres relacionados con el peronismo. - 1956"
+    }
+  ],
+  "3-6": [
+    {
+      "tipo": "Educación",
+      "evento": "Inauguración de escuelas",
+      "descripcion": "Perón inaugura escuelas: 'Es función del educador formar hombres buenos y justos'. - 1950"
+    }
+  ],
+  "3-7": [
+    {
+      "tipo": "Electoral",
+      "evento": "Elecciones legislativas",
+      "descripcion": "Las elecciones arrojan un amplio triunfo peronista para elegir 83 legisladores en 11 distritos. - 1948"
+    },
+    {
+      "tipo": "Económico",
+      "evento": "Expropiación de papel para diarios",
+      "descripcion": "Se expropian las existencias de papel para diarios, a efectos de solucionar el desabastecimiento e impedir que muchos periódicos no puedan aparecer. - 1949"
+    }
+  ],
+  "3-8": [
+    {
+      "tipo": "Político",
+      "evento": "Personería jurídica de la Unión Popular",
+      "descripcion": "La Unión Popular obtiene su Personería jurídica con alcance nacional. - 1963"
+    }
+  ],
+  "3-9": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Inauguración del Autódromo 17 de Octubre",
+      "descripcion": "El presidente y su esposa inauguran el autódromo 17 de octubre. - 1952"
+    }
+  ],
+  "3-11": [
+    {
+      "tipo": "Constitucional",
+      "evento": "Sanción de la nueva Constitución",
+      "descripcion": "Sanción de la nueva Constitución, incorporando derechos del trabajador, de la familia, de la ancianidad y de la Educación y la Cultura. - 1949"
+    },
+    {
+      "tipo": "Industrial",
+      "evento": "Instituto Aerotécnico de Córdoba",
+      "descripcion": "El Instituto Aerotécnico de Córdoba expone 3 tipos de automóviles a fabricarse en sus plantas, incluyendo el Sedan Institec. - 1952"
+    },
+    {
+      "tipo": "Electoral",
+      "evento": "Victoria peronista FREJULI",
+      "descripcion": "Cómoda victoria peronista en los comicios tras 17 años de persecuciones, con la fórmula Cámpora-Solano Lima. - 1973"
+    }
+  ],
+  "3-12": [
+    {
+      "tipo": "Electoral",
+      "evento": "Triunfo peronista en Tucumán y Buenos Aires",
+      "descripcion": "Rotundo triunfo peronista en elecciones de las provincias de Tucumán y Buenos Aires. - 1950"
+    }
+  ],
+  "3-13": [
+    {
+      "tipo": "Represión",
+      "evento": "Plan Conintes",
+      "descripcion": "Se pone en marcha el Plan Conintes (Estado de conmoción interna), decreto secreto N°9880 de 1958. - 1960"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Primer Campeonato Argentino de fútbol Infantil Evita",
+      "descripcion": "El Gral. Perón habla a los participantes del primer Campeonato Argentino de fútbol Infantil 'Evita'. - 1950"
+    }
+  ],
+  "3-14": [
+    {
+      "tipo": "Educación",
+      "evento": "Enseñanza de la religión Católica en escuelas",
+      "descripcion": "El gobierno del Gral. Perón aprueba por ley la enseñanza de la religión Católica en las escuelas. - 1947"
+    },
+    {
+      "tipo": "Electoral",
+      "evento": "Victoria del Peronismo proscripto",
+      "descripcion": "El Peronismo (a través de la Unión Popular) gana elecciones provinciales en 9 provincias y obtiene 44 diputados nacionales. - 1965"
+    }
+  ],
+  "3-16": [
+    {
+      "tipo": "Constitucional",
+      "evento": "Proclamación de la Nueva Constitución",
+      "descripcion": "Se proclama la Nueva Constitución. - 1949"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Comisión bicameral sobre diario La Prensa",
+      "descripcion": "En sesiones extraordinarias el Congreso Nacional designa una Comisión bicameral interventora e investigadora del diario La Prensa. - 1951"
+    }
+  ],
+  "3-17": [
+    {
+      "tipo": "Educación",
+      "evento": "Inauguración de la Universidad Obrera Nacional",
+      "descripcion": "Perón inaugura la Universidad Obrera Nacional, en la calle Medrano 951. Insiste en la unidad nacional como objetivo fundamental. - 1953"
+    }
+  ],
+  "3-18": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Nacionalización de los teléfonos",
+      "descripcion": "Se nacionalizan los teléfonos. - 1948"
+    },
+    {
+      "tipo": "Electoral",
+      "evento": "Elecciones en Provincia de Buenos Aires",
+      "descripcion": "Andrés Framini gana elecciones en la Provincia de Buenos Aires. El gobierno de Arturo Frondizi anula la elección. - 1962"
+    }
+  ],
+  "3-20": [
+    {
+      "tipo": "Electoral",
+      "evento": "Triunfo del peronismo en Misiones",
+      "descripcion": "Rotundo triunfo del peronismo en elecciones para gobierno y legisladores de la provincia de Misiones. - 1955"
+    }
+  ],
+  "3-22": [
+    {
+      "tipo": "Deportes",
+      "evento": "Entrega de premios infantiles Evita y Juan Perón",
+      "descripcion": "El Gral. Perón hace entrega de los premios a los ganadores de los campeonatos infantiles 'Evita' y juveniles 'Juan Perón'. - 1955"
+    }
+  ],
+  "3-23": [
+    {
+      "tipo": "Electoral",
+      "evento": "Padrón femenino",
+      "descripcion": "Queda concluido el padrón femenino con casi 4 millones de inscriptas. - 1950"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Paro general contra anulación de comicios",
+      "descripcion": "Las 62 organizaciones ordenan un paro general en defensa de la voluntad popular desconocida con la anulación de los comicios por parte del gobierno de Arturo Frondizi. - 1962"
+    }
+  ],
+  "3-24": [
+    {
+      "tipo": "Político",
+      "evento": "Golpe militar a Isabel Perón",
+      "descripcion": "Es derrocado el gobierno de Isabel Perón a través de un golpe militar, se interrumpe el Proceso Constitucional e inicia el 'Proceso de Reorganización Nacional'. Se habla de 30.000 desaparecidos, presos políticos, miles de exiliados, desterrados y perseguidos. - 1976"
+    },
+    {
+      "tipo": "Científico",
+      "evento": "Reacciones termonucleares en Isla Huemul",
+      "descripcion": "Perón anuncia que se han llevado a cabo reacciones termonucleares en la planta piloto de energía atómica de la Isla Huemul, San Carlos de Bariloche, bajo la dirección del científico Ronald Ritcher. - 1951"
+    }
+  ],
+  "3-25": [
+    {
+      "tipo": "Económico",
+      "evento": "Nacionalización del Banco Central",
+      "descripcion": "Por decreto del presidente Farrell es nacionalizado el Banco Central a fin de poner sus enormes recursos al servicio de la economía nacional. - 1946"
+    },
+    {
+      "tipo": "Económico",
+      "evento": "Censo sobre industria, comercio y transporte",
+      "descripcion": "Unos 100.000 funcionarios levantan el censo sobre industria, comercio, transporte y comunicaciones en todo el país dispuesto por el gobierno nacional. - 1947"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Desaparición de Rodolfo Walsh",
+      "descripcion": "Desaparece el escritor y periodista Rodolfo Walsh, jefe de redacción del periódico de la CGT de los Argentinos y autor de 'Operación Masacre' y '¿Quién mató a Rosendo?'. - 1977"
+    }
+  ],
+  "3-26": [
+    {
+      "tipo": "Electoral",
+      "evento": "Triunfo peronista en San Luis",
+      "descripcion": "Rotundo triunfo del peronismo en San Luis en elecciones para elegir gobernador y vice. - 1950"
+    }
+  ],
+  "3-27": [
+    {
+      "tipo": "Planificación",
+      "evento": "Lanzamiento del 2° Plan Quinquenal",
+      "descripcion": "Desde el teatro Colón, Perón anuncia el lanzamiento del 2° Plan Quinquenal. - 1953"
+    },
+    {
+      "tipo": "Electoral",
+      "evento": "Elecciones parciales 1960",
+      "descripcion": "Elecciones en todo el país para renovar parcialmente la cámara de Diputados. La expresión del peronismo proscripto, el voto en blanco, vuelve a ser mayoría. - 1960"
+    }
+  ],
+  "3-29": [
+    {
+      "tipo": "Político",
+      "evento": "Derrocamiento de Arturo Frondizi",
+      "descripcion": "Es derrocado el Presidente Arturo Frondizi. - 1962"
+    }
+  ],
+  "3-31": [
+    {
+      "tipo": "Trabajo",
+      "evento": "Clausura Congreso de Productividad y Bienestar Social",
+      "descripcion": "Clausurando el Congreso de Productividad y Bienestar Social, Perón dice: 'Comienza una nueva era de las relaciones entre las empresas y sus trabajadores, en el mundo entero'. - 1955"
+    }
+  ],
+  "4-3": [
+    {
+      "tipo": "Económico",
+      "evento": "Embargo activos Grupo Bemberg",
+      "descripcion": "Son embargados por más de 120 millones los activos del grupo financiero Bemberg. - 1950"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Fallecimiento del Vicepresidente Quijano",
+      "descripcion": "Muere el Vicepresidente de la República, Dr. Hortensio J. Quijano, quien no llega a ocupar su cargo por segunda vez. - 1952"
+    }
+  ],
+  "4-4": [
+    {
+      "tipo": "Político",
+      "evento": "Triunfo popular en Plaza de la República",
+      "descripcion": "El triunfo popular es festejado en la Plaza de la República. El candidato triunfante Juan Perón habla al pueblo reunido. - 1946"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Manifestación por suba de tarifas eléctricas",
+      "descripcion": "Una manifestación de 10.000 personas reclama por la suba de tarifas eléctricas; se transforma en violencia similar a Córdoba y Rosario. - 1972"
+    }
+  ],
+  "4-5": [
+    {
+      "tipo": "Político",
+      "evento": "Retiro de minoría radical en Diputados",
+      "descripcion": "Al proclamarse en el recinto de Diputados a los candidatos electos en Capital Federal, la minoría radical se retira. - 1946"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Provincialización de Río Negro y Formosa",
+      "descripcion": "Perón anuncia la próxima provincialización de los territorios nacionales de Río Negro y Formosa. - 1955"
+    }
+  ],
+  "4-9": [
+    {
+      "tipo": "Político",
+      "evento": "Protocolo con España",
+      "descripcion": "Se firma un protocolo con España para ampliar el convenio de cooperación entre ambos países. - 1948"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Primer Congreso Nacional de Filosofía",
+      "descripcion": "El Gral. Perón clausura en Mendoza el Primer Congreso Nacional de Filosofía donde expone sobre 'La Comunidad Organizada'. - 1949"
+    }
+  ],
+  "4-10": [
+    {
+      "tipo": "Electoral",
+      "evento": "Elecciones en Santiago, Catamarca y La Rioja",
+      "descripcion": "Triunfa ampliamente el peronismo. - 1949"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Prohibición de símbolos peronistas",
+      "descripcion": "Por decreto del gobierno de Guido, se prohíbe el uso de nombres y símbolos peronistas bajo pena de perder derechos políticos. - 1963"
+    }
+  ],
+  "4-12": [
+    {
+      "tipo": "Económico",
+      "evento": "Expropiación diario La Prensa",
+      "descripcion": "La Cámara de Senadores dispone la expropiación del diario La Prensa por deformación tendenciosa de la verdad y afectar derechos de su personal. - 1951"
+    },
+    {
+      "tipo": "Electoral",
+      "evento": "Elecciones en Chaco y La Pampa",
+      "descripcion": "Las nuevas provincias de Chaco y La Pampa realizan elecciones, imponiéndose el Partido Peronista por amplio margen. - 1953"
+    }
+  ],
+  "4-13": [
+    {
+      "tipo": "Educación",
+      "evento": "Inauguración Hogar Escuela Ezeiza",
+      "descripcion": "Perón inaugura en Ezeiza un Hogar Escuela construido por la Fundación con capacidad para 1.700 niños. - 1954"
+    }
+  ],
+  "4-15": [
+    {
+      "tipo": "Sindical",
+      "evento": "Acto en Plaza de Mayo y ataque terrorista",
+      "descripcion": "La CGT organiza un acto de apoyo al general Perón. Se produce un ataque con bombas, ocasionando 5 muertos y 93 heridos. - 1953"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Reunión CGT con Lanusse",
+      "descripcion": "La CGT se entrevista con Lanusse para aclarar la situación de los dirigentes peronistas y el retorno de los restos de Evita. - 1971"
+    }
+  ],
+  "4-17": [
+    {
+      "tipo": "Económico",
+      "evento": "Nacionalización Compañía primitiva de Gas",
+      "descripcion": "El gobierno nacionaliza la Compañía primitiva de Gas, anunciando inmediata disminución de tarifa. - 1944"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Enseñanza religiosa en escuelas",
+      "descripcion": "Se establece la enseñanza religiosa como materia ordinaria en los planes de estudio. - 1947"
+    },
+    {
+      "tipo": "Sindical",
+      "evento": "Cursos de Conducción Sindical",
+      "descripcion": "Perón inaugura los cursos de Conducción Sindical de la Confederación General del Trabajo. - 1953"
+    }
+  ],
+  "4-19": [
+    {
+      "tipo": "Educación",
+      "evento": "Cursos de Doctrina Justicialista",
+      "descripcion": "Juan Domingo Perón inaugura los cursos de Doctrina Justicialista en el Teatro General San Martín. - 1974"
+    }
+  ],
+  "4-23": [
+    {
+      "tipo": "Educación",
+      "evento": "Curso de política Alimentaria Argentina",
+      "descripcion": "El Gral. Perón inaugura en el Teatro Colón el curso de política Alimentaria Argentina, organizado por el Dr. Ramón Carrillo. - 1949"
+    }
+  ],
+  "4-24": [
+    {
+      "tipo": "Económico",
+      "evento": "Nacionalización de depósitos bancarios",
+      "descripcion": "El Gobierno nacionaliza los depósitos bancarios. - 1946"
+    }
+  ],
+  "4-25": [
+    {
+      "tipo": "Electoral",
+      "evento": "Elecciones nacionales y Vicepresidente",
+      "descripcion": "Triunfo rotundo del peronismo en elecciones nacionales para elegir legisladores y cubrir el cargo de Vicepresidente a raíz de la muerte de Quijano, siendo electo Teisaire. - 1954"
+    }
+  ],
+  "4-27": [
+    {
+      "tipo": "Sindical",
+      "evento": "Primera huelga contra dictadura militar",
+      "descripcion": "La 'Comisión de los 25', sector del peronismo combativo, organiza una manifestación de repudio a los militares; varios dirigentes caen presos. - 1979"
+    }
+  ],
+  "4-28": [
+    {
+      "tipo": "Sindical",
+      "evento": "Viaje de Rucci a Madrid",
+      "descripcion": "José Ignacio Rucci (Secretario General CGT) informa que viaja a Madrid a entrevistarse con Perón. - 1971"
+    }
+  ],
+  "4-30": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Inicio obras Monumento a Eva Perón",
+      "descripcion": "Comienzan las obras del Monumento a Eva Perón, frente a la residencia presidencial. - 1955"
+    }
+  ],
+  "5-1": [
+    {
+      "tipo": "Trabajo",
+      "evento": "Día del Trabajador 1944",
+      "descripcion": "Con motivo de la fiesta del trabajador, el Coronel Perón habla y denuncia la infiltración de ideologías extrañas en el gremialismo argentino, abogando por la unidad nacional y el sentido social de la Revolución. - 1944"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Reforma constitucional 1948",
+      "descripcion": "Perón señala la necesidad de reformar la Constitución Nacional y manifiesta que el justicialismo es una filosofía de vida profundamente cristiana y humanista. - 1948"
+    },
+    {
+      "tipo": "Militar",
+      "evento": "Ascenso a General de División",
+      "descripcion": "El Congreso Nacional asciende al Gral. Perón a General de División. - 1950"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Tercera Posición",
+      "descripcion": "Perón declara que la Tercera Posición es un sistema de economía social que pone el capital al servicio de la economía, evitando extremismos ideológicos. - 1950"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Último mensaje de Evita",
+      "descripcion": "Evita pronuncia su último mensaje al pueblo en la concentración popular en Plaza de Mayo. - 1952"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Asunción de Frondizi",
+      "descripcion": "Asume Frondizi ante una Plaza de Mayo casi vacía; el público corea el nombre de Perón y lanza globos con su efigie. - 1958"
+    }
+  ],
+  "5-3": [
+    {
+      "tipo": "Económico",
+      "evento": "Banco Central control de cambio",
+      "descripcion": "Se le otorga al Banco Central la facultad de control de cambio. - 1945"
+    }
+  ],
+  "5-4": [
+    {
+      "tipo": "Militar",
+      "evento": "Designación Ministerio de Guerra",
+      "descripcion": "Perón es designado titular del Ministerio de Guerra. - 1944"
+    },
+    {
+      "tipo": "Económico",
+      "evento": "Incorporación de empresas aéreas al Estado",
+      "descripcion": "Cuatro empresas de aeronavegación son incorporadas al Estado: Aeroposta, Zonda, zonas oeste y norte de Aerolíneas y Alfa, aglutinadas en FAMA. - 1949"
+    }
+  ],
+  "5-6": [
+    {
+      "tipo": "Educación",
+      "evento": "Censo de Analfabetos",
+      "descripcion": "Se realiza un Censo de Analfabetos en todo el país. - 1950"
+    }
+  ],
+  "5-7": [
+    {
+      "tipo": "Nacimiento",
+      "evento": "Nacimiento de Evita",
+      "descripcion": "María Eva Duarte nace en 'Los Toldos', Provincia de Buenos Aires. - 1919"
+    }
+  ],
+  "5-8": [
+    {
+      "tipo": "Electoral",
+      "evento": "Triunfo electoral en Santa Fe",
+      "descripcion": "Nuevo triunfo electoral en Santa Fe. - 1949"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Juramento Teisaire como Vicepresidente",
+      "descripcion": "Alberto Teisaire presta juramento como Vicepresidente de la Nación. - 1954"
+    }
+  ],
+  "5-10": [
+    {
+      "tipo": "Censo",
+      "evento": "Censo sobre población y vivienda",
+      "descripcion": "Se realiza censo sobre población, vivienda, edificios y agropecuario, intervienen 450.000 personas. - 1947"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Plan Conintes en vigencia",
+      "descripcion": "El gobierno manifiesta que se mantiene en vigencia el Plan Conintes (Conmoción interna de Estado). - 1963"
+    }
+  ],
+  "5-11": [
+    {
+      "tipo": "Sindical",
+      "evento": "Cursos de Conducción sindical en la CGT",
+      "descripcion": "Perón inaugura los cursos de Conducción sindical en la CGT. - 1955"
+    }
+  ],
+  "5-13": [
+    {
+      "tipo": "Económico",
+      "evento": "Empresa marítima Dodero nacionalizada",
+      "descripcion": "La empresa marítima Dodero pasa a poder del Estado. - 1949"
+    }
+  ],
+  "5-14": [
+    {
+      "tipo": "Económico",
+      "evento": "Nacionalización ferrocarril extranjero",
+      "descripcion": "Quedará nacionalizado el último ferrocarril extranjero en el país: el F.C. Central de Buenos Aires. - 1949"
+    }
+  ],
+  "5-18": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Construcción oleoducto Campo Durán-Litoral",
+      "descripcion": "Se inicia la construcción del gran oleoducto Campo Durán-Litoral: 1.490 km, con tuberías totalmente argentinas. - 1954"
+    }
+  ],
+  "5-20": [
+    {
+      "tipo": "Político",
+      "evento": "Reforma parcial Constitución",
+      "descripcion": "El Congreso Nacional sanciona una Ley que declara necesaria la reforma parcial de la Constitución y establece 180 días para convocar a elección de constituyentes. - 1955"
+    }
+  ],
+  "5-21": [
+    {
+      "tipo": "Político",
+      "evento": "Inauguración Puente Internacional",
+      "descripcion": "El Gral. Perón y el Presidente Eurico Gaspar Dutra del Brasil inauguran un Puente Internacional entre Paso de los Libres y Uruguayana. - 1947"
+    },
+    {
+      "tipo": "Protesta",
+      "evento": "Rosariazo",
+      "descripcion": "Trabajadores y estudiantes repudian la muerte de un estudiante universitario en Corrientes; la marcha es violentamente reprimida y muere otro en Rosario. - 1969"
+    }
+  ],
+  "5-23": [
+    {
+      "tipo": "Político",
+      "evento": "Disolución partidos políticos",
+      "descripcion": "Se disuelve el Partido Laborista, la Unión Cívica Radical- Junta Renovadora y los Centros Cívicos Independientes. - 1946"
+    }
+  ],
+  "5-24": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Ferrocarril de Río Turbio y locomotoras",
+      "descripcion": "Queda habilitado el flamante ferrocarril de Río Turbio, con 32 locomotoras diesel eléctricas y 600 vagones especiales. - 1951"
+    }
+  ],
+  "5-25": [
+    {
+      "tipo": "Político",
+      "evento": "Juramento de Cámpora",
+      "descripcion": "Cámpora presta juramento como Presidente con Vicente Solano Lima como Vicepresidente por el FREJULI. - 1973"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Fallecimiento de Arturo Jauretche",
+      "descripcion": "Muere Arturo Jauretche, escritor, ensayista y autor de libros sobre reafirmación del pensamiento nacional. - 1974"
+    }
+  ],
+  "5-28": [
+    {
+      "tipo": "Económico",
+      "evento": "Creación IAPI e Instituto Mixto de Reaseguros",
+      "descripcion": "Se crea el Instituto argentino para la promoción del Intercambio (IAPI) y el Instituto Mixto de Reaseguros obteniendo el monopolio estatal de reaseguros. - 1946"
+    }
+  ],
+  "5-29": [
+    {
+      "tipo": "Protesta",
+      "evento": "Cordobazo",
+      "descripcion": "Movilización popular contra el gobierno en Córdoba. - 1969"
+    },
+    {
+      "tipo": "Secuestro de Aramburu",
+      "descripcion": "Secuestro de Aramburu. - 1970"
+    }
+  ],
+  "5-30": [
+    {
+      "tipo": "Militar",
+      "evento": "Ascenso a General de Brigada",
+      "descripcion": "El Coronel Juan Domingo Perón es ascendido a General de Brigada. - 1946"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Fallecimiento madre de Perón",
+      "descripcion": "Fallece en Comodoro Rivadavia la madre de Perón, Doña Juana Sosa Toledo. - 1954"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Fallecimiento Scalabrini Ortíz",
+      "descripcion": "Muere Scalabrini Ortíz. - 1959"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Modelo Argentino para el Proyecto Nacional",
+      "descripcion": "Perón presenta el 'Modelo Argentino para el Proyecto Nacional'. - 1974"
+    }
+  ],
+  "5-31": [
+    {
+      "tipo": "Ciencia",
+      "evento": "Creación Comisión Nacional de Energía Atómica",
+      "descripcion": "El gobierno de Juan Domingo Perón crea la Comisión Nacional de Energía Atómica. - 1950"
+    }
+  ],
+  "6-1": [
+    {
+      "tipo": "Laboral",
+      "evento": "Estatuto de empleados bancarios",
+      "descripcion": "Se firma el Estatuto de los empleados bancarios. - 1948"
+    },
+    {
+      "tipo": "Ciencia",
+      "evento": "Creación Comisión de Energía Atómica",
+      "descripcion": "Se crea la Comisión de Energía Atómica para desarrollar estudios y aplicaciones industriales y de defensa nacional. - 1950"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Revocación de personería política del PJ",
+      "descripcion": "La Cámara Nacional Electoral revoca la Personería política del Partido Justicialista. - 1966"
+    }
+  ],
+  "6-3": [
+    {
+      "tipo": "Soberanía",
+      "evento": "Soberanía sobre la Antártida",
+      "descripcion": "La Cámara de Diputados de la Nación ratifica la soberanía argentina sobre la Antártida. - 1948"
+    }
+  ],
+  "6-4": [
+    {
+      "tipo": "Revolución",
+      "evento": "Día de la Revolución de 1943",
+      "descripcion": "Tropas militares marchan sobre Buenos Aires deponiendo al presidente Ramón S. Castillo; fin de la 'Década Infame'. Perón es autor de la proclama revolucionaria. - 1943"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Asunción de autoridades 1946",
+      "descripcion": "Asumen nuevas autoridades bajo la presidencia de Juan Domingo Perón; se detallan los miembros del gabinete. - 1946"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Reelección de Perón",
+      "descripcion": "Perón reelegido Presidente de la Nación jura ante la Asamblea Legislativa. - 1952"
+    }
+  ],
+  "6-5": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Viaducto de Sarandí",
+      "descripcion": "Perón inaugura el viaducto de Sarandí, considerado uno de los más importantes del mundo en su tipo. - 1953"
+    }
+  ],
+  "6-6": [
+    {
+      "tipo": "Político",
+      "evento": "Anuncio elecciones generales",
+      "descripcion": "El General Farrell anuncia elecciones generales; Perón declara que los problemas argentinos se resuelven entre argentinos. - 1945"
+    },
+    {
+      "tipo": "Diplomático",
+      "evento": "Relaciones con la URSS",
+      "descripcion": "Se establecen relaciones diplomáticas con la Unión Soviética. - 1946"
+    },
+    {
+      "tipo": "Infraestructura",
+      "evento": "Obras en astilleros Río Santiago",
+      "descripcion": "Ministerio de Marina informa sobre las obras de astilleros, anticipando la colocación de la primera quilla a un barco argentino. - 1949"
+    }
+  ],
+  "6-7": [
+    {
+      "tipo": "Militar",
+      "evento": "Designación de Perón",
+      "descripcion": "El Coronel Juan Perón es designado Jefe de la secretaría del Ministerio de Guerra. - 1943"
+    }
+  ],
+  "6-8": [
+    {
+      "tipo": "Internacional",
+      "evento": "Eva Perón en Madrid",
+      "descripcion": "Eva Perón llega a Madrid y recibe la Gran Cruz de Isabel la Católica; se produce una de las mayores manifestaciones populares de la ciudad. - 1947"
+    }
+  ],
+  "6-9": [
+    {
+      "tipo": "Conmemoración",
+      "evento": "Día de la Resistencia",
+      "descripcion": "Movimiento cívico-militar encabezado por los Generales Valle y Tanco se levanta contra el gobierno de facto de Aramburu; intentan devolver el poder al pueblo. - 1956"
+    }
+  ],
+  "6-10": [
+    {
+      "tipo": "Educación",
+      "evento": "Cátedra de Defensa Nacional",
+      "descripcion": "Perón inaugura la Cátedra de Defensa Nacional en la Universidad Nacional de La Plata, bases del Movimiento Nacional Justicialista. - 1944"
+    },
+    {
+      "tipo": "Represión",
+      "evento": "Asesinatos de Lanús",
+      "descripcion": "En José León Suárez, prisioneros son asesinados por la policía; víctimas: Carlos Lisazo, Nicolás Carranza, Francisco Garibotti, Mario Brion, Vicente Rodríguez. - 1956"
+    }
+  ],
+  "6-11": [
+    {
+      "tipo": "Agricultura",
+      "evento": "Reforma agraria",
+      "descripcion": "Perón afirma a trabajadores agropecuarios que la reforma agraria se realiza sin violencia y que no se debe un centavo a nadie. - 1953"
+    }
+  ],
+  "6-12": [
+    {
+      "tipo": "Represión",
+      "evento": "Ejecución de Juan José Valle",
+      "descripcion": "El General Juan José Valle es ejecutado en la cárcel de Las Heras. - 1956"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Último discurso de Perón",
+      "descripcion": "Perón da su último discurso en Plaza de Mayo. - 1974"
+    }
+  ],
+  "6-13": [
+    {
+      "tipo": "Industria",
+      "evento": "Plan Siderúrgico Nacional",
+      "descripcion": "Se crea el Plan Siderúrgico Nacional. - 1947"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Mensaje del Presidente Perón",
+      "descripcion": "Perón habla sobre la paz y el trabajo; critica al clero por no aceptar su acción. - 1955"
+    }
+  ],
+  "6-14": [
+    {
+      "tipo": "Sindical",
+      "evento": "Paro de 9 horas de la CGT",
+      "descripcion": "La CGT efectúa un paro en apoyo al gobierno; Perón resalta la prudencia del pueblo y su ejemplo de sabiduría. - 1955"
+    }
+  ],
+  "6-16": [
+    {
+      "tipo": "Económico",
+      "evento": "Rescate deuda externa",
+      "descripcion": "Se rescata la deuda externa del país, evitando el uso de divisas para intereses que superan los 20 millones. - 1946"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Creación Universidad Obrera",
+      "descripcion": "Se crea la Universidad Obrera por Ley N°13229; Perón afirma que se formarán los técnicos del porvenir. - 1948"
+    },
+    {
+      "tipo": "Represión",
+      "evento": "Bombardeo a Plaza de Mayo",
+      "descripcion": "Abortado golpe militar, aviones bombardean y ametrallan a la multitud; mueren más de 370 hombres y mujeres peronistas. - 1955"
+    }
+  ],
+  "6-18": [
+    {
+      "tipo": "Internacional",
+      "evento": "Adhesión a la UNESCO",
+      "descripcion": "El gobierno de Perón ratifica la adhesión de Argentina a la UNESCO. - 1948"
+    }
+  ],
+  "6-19": [
+    {
+      "tipo": "Social",
+      "evento": "Fundación Ayuda Social María Eva Duarte",
+      "descripcion": "Se crea la Fundación, que establece policlínicos, hogares-escuela, hogares de ancianos, comedores universitarios y otras obras de ayuda social. - 1948"
+    }
+  ],
+  "6-20": [
+    {
+      "tipo": "Educación",
+      "evento": "Supresión aranceles universitarios",
+      "descripcion": "Quedan suprimidos los aranceles universitarios para que la enseñanza superior esté al alcance de todos. - 1949"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Retorno de Perón a Argentina",
+      "descripcion": "Concentración en Ezeiza; enfrentamiento armado deja decenas de muertos y Perón debe aterrizar en Morón por seguridad. - 1973"
+    }
+  ],
+  "6-21": [
+    {
+      "tipo": "Político",
+      "evento": "Convocatoria a la Reconstrucción Nacional",
+      "descripcion": "Perón convoca a todos los argentinos para la Reconstrucción Nacional. - 1973"
+    }
+  ],
+  "6-23": [
+    {
+      "tipo": "Político",
+      "evento": "Mensaje de Perón",
+      "descripcion": "Perón llama a los argentinos a deponer toda actitud beligerante para evitar luchas y males mayores. - 1955"
+    }
+  ],
+  "6-26": [
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Leopoldo Marechal",
+      "descripcion": "Muere Leopoldo Marechal, escritor y pensador nacional. - 1970"
+    }
+  ],
+  "6-27": [
+    {
+      "tipo": "Internacional",
+      "evento": "Visita de Evita al Vaticano",
+      "descripcion": "Evita visita al Papa Pío XII y recibe para Perón la condecoración de la Gran Cruz de San Gregorio Magno. - s/f"
+    }
+  ],
+  "6-28": [
+    {
+      "tipo": "Político",
+      "evento": "Caída de Arturo Illia",
+      "descripcion": "Cae el gobierno de Arturo Illia. - 1966"
+    }
+  ],
+  "6-30": [
+    {
+      "tipo": "Salud",
+      "evento": "Ingreso de Argentina a la OMS",
+      "descripcion": "El gobierno de Juan Perón aprueba el ingreso de Argentina a la Organización Mundial de la Salud. - 1948"
+    },
+    {
+      "tipo": "Asesinato",
+      "evento": "Asesinato de Augusto Vandor",
+      "descripcion": "Asesinado Augusto Vandor en el local de la Unión Obrera Metalúrgica. - 1969"
+    }
+  ],
+  "7-1": [
+    {
+      "tipo": "Económico",
+      "evento": "Congelamiento de precios y Consejo Económico Social",
+      "descripcion": "Quedan congelados los precios de los medicamentos; Perón lanza campaña contra el agio y la especulación. Se crea el Consejo Económico Social. - 1947"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Gustavo Rearte",
+      "descripcion": "Muere Gustavo Rearte, dirigente de la Juventud Peronista, de participación en la resistencia. - 1973"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Juan Domingo Perón",
+      "descripcion": "Muere el General Juan Domingo Perón, siendo Presidente de la República por tercera vez. - 1974"
+    }
+  ],
+  "7-2": [
+    {
+      "tipo": "Internacional",
+      "evento": "Evita en Roma",
+      "descripcion": "Evita es recibida solemnemente en Roma por el Presidente de la República Italiana Enrico de Nicola. - 1947"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Cámara de Alquileres",
+      "descripcion": "Se establece la Cámara de Alquileres, regulando arrendamientos con rebaja de los mismos. - 1943"
+    }
+  ],
+  "7-3": [
+    {
+      "tipo": "Internacional",
+      "evento": "Evita en Roma",
+      "descripcion": "Evita es recibida en Roma por el Primer Ministro Alcides de Gásperi. - 1947"
+    }
+  ],
+  "7-6": [
+    {
+      "tipo": "Política exterior",
+      "evento": "Contribución argentina a la paz mundial",
+      "descripcion": "El Presidente Perón anuncia por radio nacional e internacional la contribución argentina a la paz mundial. - 1947"
+    },
+    {
+      "tipo": "Internacional",
+      "evento": "Tratado con Chile",
+      "descripcion": "El General Ibañez del Campo (Presidente de Chile) visita Argentina; se firma tratado de unión económica entre ambos países. - 1953"
+    }
+  ],
+  "7-7": [
+    {
+      "tipo": "Político",
+      "evento": "Designación de Perón como Vicepresidente",
+      "descripcion": "Perón es designado Vicepresidente de la República, manteniendo Ministerio de Guerra y Secretaría de Trabajo; homenaje de ferroviarios y concentración en Plaza de Mayo. - 1944"
+    },
+    {
+      "tipo": "Electoral",
+      "evento": "Gana Illia elecciones",
+      "descripcion": "Gana Arturo Illia con el 23% de los votos; Perón desde el exilio ordena votar en blanco ante proscripción del justicialismo. - 1963"
+    }
+  ],
+  "7-8": [
+    {
+      "tipo": "Político",
+      "evento": "Designación de Perón como Vicepresidente",
+      "descripcion": "El Coronel Juan Perón es designado Vicepresidente de la República con retención de cargos de Ministro de Guerra y Secretario de Trabajo y Previsión. - 1944"
+    },
+    {
+      "tipo": "Internacional",
+      "evento": "Fundación Eva Perón",
+      "descripcion": "El decreto 20564 otorga Personería Jurídica a la Fundación Eva Perón, energía y acción en favor de los más humildes. - 1948"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Asunción de Menem",
+      "descripcion": "Asume la presidencia Dr. Carlos Saul Menem, seis meses antes de lo previsto por abandono del gobierno de Raúl Alfonsín. - 1989"
+    }
+  ],
+  "7-9": [
+    {
+      "tipo": "Economía",
+      "evento": "Independencia económica e IAPI",
+      "descripcion": "Se declara la Independencia Económica de Argentina con la creación del IAPI; Perón y González Videla acuerdan delimitación de la Antártida y salitre. - 1947"
+    }
+  ],
+  "7-11": [
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Leopoldo Marechal",
+      "descripcion": "Nace Leopoldo Marechal. - 1900"
+    }
+  ],
+  "7-12": [
+    {
+      "tipo": "Deporte",
+      "evento": "Reconocimiento a Futbolistas Argentinos Agremiados",
+      "descripcion": "Se otorga reconocimiento jurídico a Futbolistas Argentinos Agremiados. - 1948"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Renuncias Cámpora y Solano Lima",
+      "descripcion": "Cámpora y Solano Lima renuncian; el gobierno restituye el grado de Teniente General a Perón y el uso del uniforme. - 1973"
+    }
+  ],
+  "7-13": [
+    {
+      "tipo": "Industria",
+      "evento": "SOMISA y planes siderúrgicos",
+      "descripcion": "Se sanciona ley sobre planes siderúrgicos; queda establecida la Sociedad Mixta Siderúrgica (SOMISA) para producir acero con minerales y combustibles nacionales. - 1947"
+    }
+  ],
+  "7-15": [
+    {
+      "tipo": "Económico",
+      "evento": "Consejo Económico Nacional",
+      "descripcion": "Se crea el Consejo Económico Nacional. - 1947"
+    }
+  ],
+  "7-18": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Ferrocarril internacional a Bolivia",
+      "descripcion": "Se inaugura el primer tramo del ferrocarril internacional a Bolivia, entre Yacuiba y Villamontes. - 1949"
+    },
+    {
+      "tipo": "Política exterior",
+      "evento": "Guerra de Corea",
+      "descripcion": "La Cancillería aclara que Argentina no enviará tropas a Corea; comunicado sobre la respuesta a la ONU. - 1950"
+    }
+  ],
+  "7-20": [
+    {
+      "tipo": "Administrativo",
+      "evento": "Chaco y La Pampa se transforman en provincias",
+      "descripcion": "Por Ley, las gobernaciones de Chaco y La Pampa se transforman en provincias argentinas. - 1951"
+    },
+    {
+      "tipo": "Económico",
+      "evento": "Repatriación deuda externa",
+      "descripcion": "Perón anuncia la repatriación de la deuda externa. - 1946"
+    }
+  ],
+  "7-21": [
+    {
+      "tipo": "Internacional",
+      "evento": "Evita en París",
+      "descripcion": "Evita es recibida en París por el canciller George Bidault, quien le impone la 'Legión de Honor'. - 1947"
+    }
+  ],
+  "7-22": [
+    {
+      "tipo": "Internacional",
+      "evento": "Evita con Auriol",
+      "descripcion": "Evita es recibida en París por el Presidente de la República Francesa Vincent Auriol. - 1947"
+    }
+  ],
+  "7-25": [
+    {
+      "tipo": "Infraestructura",
+      "evento": "Gasoducto Comodoro Rivadavia - Buenos Aires",
+      "descripcion": "Perón preside el comienzo de las obras del gasoducto Comodoro Rivadavia – Buenos Aires; se inaugurará en diciembre de 1949. - 1947"
+    },
+    {
+      "tipo": "Internacional",
+      "evento": "Evita visita Notre Dame",
+      "descripcion": "Evita visita Notre Dame en París, acompañada por Monseñor Angelo G. Roncalli (futuro Juan XXIII). - 1947"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Fundación del Partido Peronista",
+      "descripcion": "Se funda el Partido Peronista. - 1949"
+    }
+  ],
+  "7-26": [
+    {
+      "tipo": "Político",
+      "evento": "Primera Asamblea Nacional del Movimiento Femenino Peronista",
+      "descripcion": "Eva inaugura la Primera Asamblea Nacional del Movimiento Femenino Peronista; se canta por primera vez 'Evita Capitana'. - 1949"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Evita Perón",
+      "descripcion": "Evita fallece a los 33 años; se declara duelo nacional por 30 días. - 1952"
+    }
+  ],
+  "7-27": [
+    {
+      "tipo": "Política exterior",
+      "evento": "Manifestación popular sobre política internacional",
+      "descripcion": "Manifestación popular en apoyo a la política internacional de Perón durante la Segunda Guerra Mundial. - 1944"
+    }
+  ],
+  "7-28": [
+    {
+      "tipo": "Electoral",
+      "evento": "Votos en blanco ordenados por Perón",
+      "descripcion": "Ganan los votos en blanco ordenados por Perón en las elecciones para constituyentes convocadas por la 'Revolución Libertadora'. - 1957"
+    }
+  ],
+  "8-1": [
+    {
+      "tipo": "Internacional",
+      "evento": "Evita en Mónaco",
+      "descripcion": "Evita visita el Principado de Mónaco y recibe del Príncipe Rainiero la Medalla de Oro del Principado. - 1947"
+    }
+  ],
+  "8-2": [
+    {
+      "tipo": "Político",
+      "evento": "Reelección de Perón",
+      "descripcion": "La CGT auspicia la reelección del general Perón para una segunda presidencia, posibilidad que otorga la reforma constitucional del 49. - 1951"
+    }
+  ],
+  "8-6": [
+    {
+      "tipo": "Político",
+      "evento": "Levantamiento del estado de sitio",
+      "descripcion": "Es levantado el estado de sitio. El ministro del Interior Hortensio Quijano anuncia su decisión al periodismo. - 1945"
+    },
+    {
+      "tipo": "Economía",
+      "evento": "Precios máximos",
+      "descripcion": "El gobierno del general Perón fija legislativamente normas para los precios máximos y sobre agio y especulación. - 1946"
+    }
+  ],
+  "8-8": [
+    {
+      "tipo": "Política",
+      "evento": "Derogación Plan Conintes",
+      "descripcion": "Derogación de los decretos del Plan Conintes. - 1961"
+    }
+  ],
+  "8-9": [
+    {
+      "tipo": "Internacional",
+      "evento": "Acuerdos limítrofes con Chile",
+      "descripcion": "Perón en Tucumán firma acuerdos limítrofes con Chile. - 1947"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Provincias nuevas",
+      "descripcion": "El gobierno de Perón convierte en Provincias los Territorios Nacionales de Chaco y La Pampa. - 1947"
+    }
+  ],
+  "8-10": [
+    {
+      "tipo": "Homenaje",
+      "evento": "Rosas en Southampton",
+      "descripcion": "Diez compañeros colocan rosas sobre la tumba del Brigadier Juan Manuel de Rosas, primer paso para repatriación de sus restos. - 1970"
+    }
+  ],
+  "8-14": [
+    {
+      "tipo": "Internacional",
+      "evento": "Visita a Paraguay",
+      "descripcion": "Perón visita Paraguay y devuelve los trofeos de Guerra conquistados en la Guerra de la Triple Alianza (1865-1870). - 1954"
+    }
+  ],
+  "8-19": [
+    {
+      "tipo": "Educación",
+      "evento": "Universidad Nacional Obrera",
+      "descripcion": "El gobierno de Perón crea la Universidad Nacional Obrera, que luego se transformará en la Universidad Tecnológica Nacional. - 1948"
+    }
+  ],
+  "8-20": [
+    {
+      "tipo": "Internacional",
+      "evento": "Homenaje a Eva Perón",
+      "descripcion": "Conferencia Interamericana en Río de Janeiro tributa emotivo homenaje a Eva Perón. - 1947"
+    }
+  ],
+  "8-21": [
+    {
+      "tipo": "Derechos civiles",
+      "evento": "Derechos políticos de la mujer",
+      "descripcion": "La Cámara de Senadores aprueba el proyecto de ley sobre los Derechos Políticos de la Mujer. - 1946"
+    },
+    {
+      "tipo": "Institucional",
+      "evento": "Instituto Ganadero Argentino",
+      "descripcion": "Se crea el Instituto Ganadero Argentino. - 1952"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Ley de radicación de capitales extranjeros",
+      "descripcion": "El gobierno de Perón sanciona la ley de radicación de capitales extranjeros. - 1953"
+    }
+  ],
+  "8-22": [
+    {
+      "tipo": "Político",
+      "evento": "Cabildo Abierto del Justicialismo y renuncia de Evita",
+      "descripcion": "Se realiza el Cabildo Abierto del Justicialismo, con 2 millones de participantes; Eva Perón anuncia su renuncia irrevocable a la candidatura presidencial, retornando la fórmula Perón-Quijano. - 1951"
+    },
+    {
+      "tipo": "Fallecimiento / Represión",
+      "evento": "Masacre de Trelew",
+      "descripcion": "Masacre de 16 presos políticos que habían tomado el penal de Rawson y aeropuerto de Trelew. - 1972"
+    }
+  ],
+  "8-23": [
+    {
+      "tipo": "Internacional",
+      "evento": "Retorno de Evita",
+      "descripcion": "Evita regresa de su viaje por España, Italia, Francia, Mónaco, Suiza, Brasil y Uruguay. - 1947"
+    },
+    {
+      "tipo": "Secuestro",
+      "evento": "Felipe Vallese",
+      "descripcion": "Es secuestrado Felipe Vallese, delegado de fábrica metalúrgica TEA, primer desaparecido de Argentina. - 1962"
+    }
+  ],
+  "8-24": [
+    {
+      "tipo": "Energía",
+      "evento": "Ente Nacional de Energía",
+      "descripcion": "Se crea el Ente Nacional de Energía, encargado de la política energética nacional. - 1950"
+    },
+    {
+      "tipo": "Comercio",
+      "evento": "Pacto con Hungría",
+      "descripcion": "Se firma un pacto comercial con Hungría por 3 años; Perón destaca la situación económica del país. - 1953"
+    }
+  ],
+  "8-27": [
+    {
+      "tipo": "Fallecimiento",
+      "evento": "José Alonso",
+      "descripcion": "Es asesinado el dirigente obrero peronista José Alonso, con amplia trayectoria en CGT y sindicatos. - 1970"
+    }
+  ],
+  "8-28": [
+    {
+      "tipo": "Derechos sociales",
+      "evento": "Derechos de la ancianidad",
+      "descripcion": "Eva Perón proclama solemnemente los Derechos de la Ancianidad, luego incluidos en la Constitución de 1949. - 1948"
+    }
+  ],
+  "8-30": [
+    {
+      "tipo": "Político",
+      "evento": "Renuncia de Perón solicitada",
+      "descripcion": "Perón solicita permiso para presentar su renuncia a la Presidencia, buscando condicionar la actitud de adversarios políticos. - 1955"
+    }
+  ],
+  "8-31": [
+    {
+      "tipo": "Fallecimiento / Renunciamiento",
+      "evento": "Día del Renunciamiento de Eva Perón",
+      "descripcion": "Evita escribe un ejemplo de dedicación por la Patria y renuncia a honor presidencial. - 1951"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Perón frente a la Casa Rosada",
+      "descripcion": "Perón solicita retirar la propuesta de renuncia a la Presidencia: 'Hemos ofrecido la paz y no la han querido...' - 1955"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Fin del Servicio Militar Obligatorio",
+      "descripcion": "El Presidente Carlos Menem elimina el Servicio Militar Obligatorio mediante Decreto 1537, reemplazándolo por servicio voluntario. - 1994"
+    }
+  ],
+  "9-2": [
+    {
+      "tipo": "Economía",
+      "evento": "Banco de Crédito Industrial",
+      "descripcion": "Comienza a operar el Banco de Crédito Industrial y Fomento Minero. - 1944"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Curso de Elevación Cultural",
+      "descripcion": "Perón inaugura el primer curso de Elevación Cultural Superior para los agregados obreros a las Embajadas en el Exterior. - 1946"
+    }
+  ],
+  "9-3": [
+    {
+      "tipo": "Nacionalización",
+      "evento": "Unión Telefónica",
+      "descripcion": "Se firma la transferencia de la Compañía Unión Telefónica de la ITT al Estado. - 1946"
+    },
+    {
+      "tipo": "Histórico",
+      "evento": "Restos de Evita a Perón",
+      "descripcion": "En Madrid, el Embajador Jorge Rojas Silveyra entrega a Perón los restos de Evita que procedían de Italia. - 1971"
+    }
+  ],
+  "9-6": [
+    {
+      "tipo": "Política",
+      "evento": "Presidencia del Consejo Nacional Post-Guerra",
+      "descripcion": "El Coronel Juan Domingo Perón se hace cargo de la Presidencia del Consejo Nacional Post-Guerra. - 1944"
+    }
+  ],
+  "9-7": [
+    {
+      "tipo": "Educación",
+      "evento": "Escuela Sindical Universitaria",
+      "descripcion": "Perón inaugura en la Facultad de Derecho la primera Escuela Sindical Universitaria. - 1953"
+    },
+    {
+      "tipo": "Industria / Transporte",
+      "evento": "Avión Justicialista del aire",
+      "descripcion": "Perón asiste a las pruebas del avión 'Justicialista del aire', construido íntegramente en Argentina. - 1953"
+    }
+  ],
+  "9-8": [
+    {
+      "tipo": "Legislativo",
+      "evento": "Arrendamientos rurales",
+      "descripcion": "El gobierno de Perón establece vía legislativa un régimen de arrendamientos y aparcerías rurales. - 1948"
+    }
+  ],
+  "9-9": [
+    {
+      "tipo": "Legislativo",
+      "evento": "Voto femenino",
+      "descripcion": "Se sanciona la Ley 13010 de los Derechos Políticos de la Mujer. - 1947"
+    }
+  ],
+  "9-10": [
+    {
+      "tipo": "Legislativo",
+      "evento": "Derechos suboficiales",
+      "descripcion": "Por resolución final del Senado se acuerdan derechos electorales a los suboficiales del Ejército. - 1948"
+    },
+    {
+      "tipo": "Industria",
+      "evento": "Independencia industrial",
+      "descripcion": "Perón afirma en La Falda, Córdoba, que en 5 años la Argentina logrará su independencia industrial. - 1953"
+    }
+  ],
+  "9-13": [
+    {
+      "tipo": "Nacionalización",
+      "evento": "Teléfonos",
+      "descripcion": "Se firman los contratos de compra de la Unión Telefónica, nacionalizándose los teléfonos; inversión de 400 millones. - 1946"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Cursos para agregados obreros",
+      "descripcion": "Se inician los cursos para agregados obreros en el exterior. - 1946"
+    }
+  ],
+  "9-14": [
+    {
+      "tipo": "Educación",
+      "evento": "Estatuto del Docente",
+      "descripcion": "Se firma el Estatuto del Docente, beneficiando a 120.000 educadores. - 1954"
+    }
+  ],
+  "9-15": [
+    {
+      "tipo": "Legislativo",
+      "evento": "Adopción de menores",
+      "descripcion": "El gobierno establece un régimen legislativo para la adopción de menores. - 1948"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Asistencia familiar",
+      "descripcion": "Incorpora al Código de Derecho Penal obligaciones y penalidades derivadas del incumplimiento de asistencia familiar. - 1950"
+    }
+  ],
+  "9-16": [
+    {
+      "tipo": "Golpe de Estado",
+      "evento": "Revolución antiperonista",
+      "descripcion": "Golpe de Estado a Perón, derrocando al gobierno elegido democráticamente. - 1955"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Atilio López",
+      "descripcion": "Muere asesinado Atilio López, dirigente sindical peronista de Córdoba. - 1975"
+    }
+  ],
+  "9-17": [
+    {
+      "tipo": "Economía",
+      "evento": "Argentinización de los ferrocarriles",
+      "descripcion": "Perón anuncia la argentinización de los ferrocarriles y leyes para combatir endemias como bocio y paludismo. - 1946 / 1948"
+    }
+  ],
+  "9-19": [
+    {
+      "tipo": "Agricultura",
+      "evento": "Prórroga de arrendamientos",
+      "descripcion": "Perón establece por ley la prórroga de arrendamientos agrícolas, explotaciones tamberas y tierras de pastoreo. - 1946"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "J.W. Cooke",
+      "descripcion": "Muere el dirigente justicialista J.W. Cooke. - 1968"
+    }
+  ],
+  "9-21": [
+    {
+      "tipo": "Legislativo",
+      "evento": "Suspensión de juicios y desalojos",
+      "descripcion": "El gobierno de Perón establece la suspensión de los juicios y desalojos urbanos. - 1946"
+    }
+  ],
+  "9-22": [
+    {
+      "tipo": "Fallecimiento",
+      "evento": "J.J. Hernández Arregui",
+      "descripcion": "Muere el historiador y pensador nacional J.J. Hernández Arregui. - 1974"
+    }
+  ],
+  "9-23": [
+    {
+      "tipo": "Política / Presidencia",
+      "evento": "Despacho de Evita",
+      "descripcion": "Evita instala su despacho en el Palacio del Consejo Deliberante. - 1946"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Ley 13010 Voto femenino",
+      "descripcion": "Promulgación de la Ley 13010 del Voto Femenino; Evita participa del acto simbólico. - 1947"
+    },
+    {
+      "tipo": "Economía / Banca",
+      "evento": "Modificaciones bancarias",
+      "descripcion": "Se modifica la organización bancaria y se suspende la garantía oro en los billetes. - 1950"
+    },
+    {
+      "tipo": "Gobierno de facto",
+      "evento": "Asume Lonardi",
+      "descripcion": "Tras golpe militar, asume el poder el Gral. Lonardi, Presidente de facto. - 1955"
+    },
+    {
+      "tipo": "Político",
+      "evento": "Tercer mandato de Perón",
+      "descripcion": "Triunfo de la fórmula Perón-Perón por 62% de votos; Perón es elegido Presidente por tercera vez. - 1973"
+    }
+  ],
+  "9-24": [
+    {
+      "tipo": "Seguridad social",
+      "evento": "Reorganización del Instituto Nacional de Previsión Social",
+      "descripcion": "El gobierno de Perón reorganiza el Instituto Nacional de Previsión Social y todas las cajas de previsión. - 1953"
+    }
+  ],
+  "9-25": [
+    {
+      "tipo": "Medio ambiente",
+      "evento": "Protección de bosques",
+      "descripcion": "El gobierno de Perón establece normas para la protección de los bosques y tierras forestales. - 1948"
+    },
+    {
+      "tipo": "Exilio",
+      "evento": "Perón abandona Argentina",
+      "descripcion": "Perón abandona la patria a bordo de la cañonera Paraguay rumbo al exilio. - 1955"
+    },
+    {
+      "tipo": "Fallecimiento / Sindicalismo",
+      "evento": "Asesinato de José Ignacio Rucci",
+      "descripcion": "Es asesinado el dirigente metalúrgico y Secretario General de la CGT José Ignacio Rucci. - 1973"
+    }
+  ],
+  "9-27": [
+    {
+      "tipo": "Huelga",
+      "evento": "Huelga general",
+      "descripcion": "62 organizaciones y otros sindicatos disponen una huelga general, que llegará al máximo hacia el 24 de octubre. - 1957"
+    }
+  ],
+  "9-28": [
+    {
+      "tipo": "Comercio exterior",
+      "evento": "Envío de trigo a España",
+      "descripcion": "El gobierno argentino envía un millón de toneladas de trigo a España. - 1944"
+    },
+    {
+      "tipo": "Educación privada",
+      "evento": "Estatuto del Docente Privado",
+      "descripcion": "Se establecen subsidios financieros a la enseñanza privada mediante la Ley 13.407. - 1947"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Régimen de sueldos docentes",
+      "descripcion": "Es Ley el nuevo régimen de sueldos para docentes. - 1948"
+    },
+    {
+      "tipo": "Golpe de Estado / Manifestación",
+      "evento": "Abortado golpe Menéndez",
+      "descripcion": "Abortado golpe del Gral. Benjamín Menéndez; el apoyo popular a Perón se traduce en manifestación obrera en Plaza de Mayo y Campo de Mayo. - 1951"
+    },
+    {
+      "tipo": "Soberanía",
+      "evento": "Operativo Cóndor",
+      "descripcion": "Un grupo desvía un avión de Aerolíneas Argentinas a Puerto Stanley, Malvinas, izando el pabellón nacional; detenido por el gobierno de Onganía. - 1966"
+    }
+  ],
+  "9-29": [
+    {
+      "tipo": "Religión",
+      "evento": "Banda de Generala a la Virgen de la Merced",
+      "descripcion": "Perón y Evita colocan en Ensenada la banda de Generala a la Virgen de la Merced. - 1946"
+    },
+    {
+      "tipo": "Administración",
+      "evento": "Registro Nacional de las Personas",
+      "descripcion": "El gobierno de Perón crea el Registro Nacional de las Personas. - 1948"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Régimen de partidos políticos",
+      "descripcion": "Se crea por ley el régimen de los partidos políticos. - 1949"
+    },
+    {
+      "tipo": "Trabajo",
+      "evento": "Dirección Nacional del Servicio del Empleo",
+      "descripcion": "Se crea dentro del Ministerio de Trabajo la Dirección Nacional del Servicio del Empleo. - 1949"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Propiedad Horizontal",
+      "descripcion": "Incorporación al Código Civil del Régimen de Propiedad Horizontal. - 1950"
+    },
+    {
+      "tipo": "Legislativo",
+      "evento": "Venta y arrendamiento tierras fiscales",
+      "descripcion": "Se establece por ley el régimen de venta y arrendamiento de tierras fiscales. - 1950"
+    },
+    {
+      "tipo": "Trabajo",
+      "evento": "Servicios Sociales para Bancarios",
+      "descripcion": "Se crea la Dirección de Servicios Sociales para Bancarios. - 1950"
+    },
+    {
+      "tipo": "Sindicalismo",
+      "evento": "Perón en la CGT",
+      "descripcion": "Perón habla en la CGT sobre la independencia de la organización sindical frente a la religión. - 1954"
+    }
+  ],
+  "10-2": [
+    {
+      "tipo": "Visita internacional",
+      "evento": "Perón en Paraguay",
+      "descripcion": "Perón visita Paraguay, recibido con afecto; mantiene conferencias con el presidente Federico Chávez buscando la unidad de ambos países. - 1953"
+    }
+  ],
+  "10-3": [
+    {
+      "tipo": "Doctrina política",
+      "evento": "Discurso sobre justicialismo",
+      "descripcion": "Perón en conferencia de telecomunicaciones explica que el justicialismo busca un orden justo, equilibrando derechos del individuo y de la sociedad. - 1952"
+    }
+  ],
+  "10-5": [
+    {
+      "tipo": "Obras públicas",
+      "evento": "Caminos",
+      "descripcion": "El gobierno de Perón libra 1.500 km de caminos construidos durante 1954. - 1954"
+    }
+  ],
+  "10-8": [
+    {
+      "tipo": "Nacimiento",
+      "evento": "Juan Domingo Perón",
+      "descripcion": "Nace Juan Domingo Perón, oficialmente en Lobos, aunque estudios recientes señalan Roque Pérez. - 1895"
+    }
+  ],
+  "10-9": [
+    {
+      "tipo": "Elecciones",
+      "evento": "Convocatoria elecciones",
+      "descripcion": "Hortensio Quijano anuncia elecciones para abril de 1946; Perón renuncia a todos sus cargos y es confinado a la Isla Martín García. - 1945"
+    },
+    {
+      "tipo": "Comercio exterior",
+      "evento": "Convenio con Brasil",
+      "descripcion": "Convenio bilateral: caucho crudo y cubiertas por trigo (1.200.000 toneladas anuales). - 1946"
+    }
+  ],
+  "10-10": [
+    {
+      "tipo": "Renuncia",
+      "evento": "Perón sin cargos",
+      "descripcion": "Perón renuncia a Vicepresidencia, Ministerio de Guerra y Secretaría de Trabajo; se despide de los trabajadores desde la Secretaría de Trabajo y Previsión. - 1945"
+    },
+    {
+      "tipo": "Agricultura",
+      "evento": "Control de langostas",
+      "descripcion": "Perón anuncia combate científico de la langosta, afectando 1 millón de hectáreas por año. - 1947"
+    },
+    {
+      "tipo": "Industria",
+      "evento": "Altos Hornos de Zapla",
+      "descripcion": "Se realiza la primera colada de arrabio argentino. - 1945"
+    }
+  ],
+  "10-12": [
+    {
+      "tipo": "Distinción internacional",
+      "evento": "Collar de la Orden de Rubén Darío",
+      "descripcion": "Perón recibe el Collar de la Orden de Rubén Darío del gobierno nicaragüense. - 1953"
+    },
+    {
+      "tipo": "Política",
+      "evento": "Voz grabada de Perón",
+      "descripcion": "Acto peronista donde se escucha la voz grabada de Perón. - 1963"
+    },
+    {
+      "tipo": "Presidencia",
+      "evento": "Tercer mandato",
+      "descripcion": "Perón asume la Presidencia por tercera vez con el mayor apoyo electoral en el país. - 1973"
+    }
+  ],
+  "10-13": [
+    {
+      "tipo": "Confinamiento",
+      "evento": "Isla Martín García",
+      "descripcion": "El Coronel Perón es recluido en un buque y trasladado a la isla Martín García por órdenes de Farrel y Vernengo Lima. - 1945"
+    }
+  ],
+  "10-15": [
+    {
+      "tipo": "Legislativo",
+      "evento": "Estatuto del Peón",
+      "descripcion": "El Coronel Perón anuncia la sanción del Estatuto del Peón. - 1944"
+    },
+    {
+      "tipo": "Cultura / Educación",
+      "evento": "La Razón de mi Vida",
+      "descripcion": "Se presenta la obra de Evita “La Razón de mi Vida”, sin su presencia por enfermedad. - 1951"
+    }
+  ],
+  "10-17": [
+    {
+      "tipo": "Día histórico",
+      "evento": "Día de la Lealtad",
+      "descripcion": "El pueblo rescata a Perón; huelga espontánea y aparición de Perón en Casa de Gobierno, con antorchas y discursos. - 1945"
+    },
+    {
+      "tipo": "Política / Social",
+      "evento": "Evita a los descamisados",
+      "descripcion": "Evita se dirige por primera vez a los descamisados en Plaza de Mayo. - 1946"
+    },
+    {
+      "tipo": "Doctrina política",
+      "evento": "20 Verdades del Peronismo",
+      "descripcion": "Perón desde los balcones de la Casa Rosada anuncia los 20 postulados del justicialismo. - 1950"
+    },
+    {
+      "tipo": "Distinción",
+      "evento": "Gran Medalla de la Lealtad Peronista",
+      "descripcion": "José Espejo impone la Gran Medalla de la Lealtad Peronista a Perón. - 1951"
+    },
+    {
+      "tipo": "Medios",
+      "evento": "Televisión Argentina",
+      "descripcion": "Se inaugura la televisión en Argentina. - 1951"
+    },
+    {
+      "tipo": "Doctrina política",
+      "evento": "Tercera Posición",
+      "descripcion": "Perón anuncia los postulados de la Tercera Posición desde los balcones de la Casa Rosada. - 1953"
+    },
+    {
+      "tipo": "Política / Represión",
+      "evento": "Acto justicialista reprimido",
+      "descripcion": "Se permite acto donde se escucha a Perón, posteriormente reprimido. - 1963"
+    }
+  ],
+  "10-18": [
+    {
+      "tipo": "Paro",
+      "evento": "Paro total en favor de Perón",
+      "descripcion": "Se realiza un paro total en todo el país en favor del Coronel Perón. - 1945"
+    },
+    {
+      "tipo": "Sindicalismo",
+      "evento": "Nueva sede CGT",
+      "descripcion": "Se inaugura la nueva sede de la CGT en Azopardo e Independencia. - 1950"
+    }
+  ],
+  "10-21": [
+    {
+      "tipo": "Plan Quinquenal",
+      "evento": "Exposición ante el Congreso",
+      "descripcion": "Perón expone los alcances del primer Plan Quinquenal: energía, obras sanitarias, navegación, puertos y recursos naturales. - 1946"
+    }
+  ],
+  "10-23": [
+    {
+      "tipo": "Partido político",
+      "evento": "Organización Partido Laborista",
+      "descripcion": "Se termina de organizar el Partido Laborista. - 1945"
+    }
+  ],
+  "10-25": [
+    {
+      "tipo": "Educación",
+      "evento": "Ciudad estudiantil",
+      "descripcion": "Se inauguran en Capital Federal las obras de la ciudad estudiantil. - 1951"
+    }
+  ],
+  "10-26": [
+    {
+      "tipo": "Estadística",
+      "evento": "Consejo Nacional de Estadística",
+      "descripcion": "Se inaugura el Consejo Nacional de Estadística y Censo. - 1944"
+    },
+    {
+      "tipo": "Transporte / Aeropuertos",
+      "evento": "Aeródromo de Ezeiza",
+      "descripcion": "Se inaugura el monumental aeródromo nacional de Ezeiza Ministro Pistarini. - 1949"
+    }
+  ],
+  "10-27": [
+    {
+      "tipo": "Trabajo",
+      "evento": "Director Departamento Nacional del Trabajo",
+      "descripcion": "Perón es designado y asume como Director del Departamento Nacional del Trabajo. - 1943"
+    },
+    {
+      "tipo": "Matrimonio",
+      "evento": "Perón y Evita",
+      "descripcion": "Se realiza el matrimonio civil entre Perón y Eva Duarte en Junín. - 1945"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Ciudad Estudiantil Fundación Eva Perón",
+      "descripcion": "Se inaugura la Ciudad Estudiantil, con pabellones de estudio, habitaciones y servicios completos. - 1951"
+    }
+  ],
+  "10-28": [
+    {
+      "tipo": "Partido político",
+      "evento": "Unión Cívica Radical – Junta Renovadora",
+      "descripcion": "Se crea la Unión Cívica Radical – Junta Renovadora bajo conducción de Jacinto Hortensio Quijano. - 1945"
+    },
+    {
+      "tipo": "Industria",
+      "evento": "Acuerdo con Fiat, Deutz y Hanomag",
+      "descripcion": "Acuerdo para instalar fábricas de tractores en el país, capacidad mínima anual 12.800 máquinas. - 1954"
+    }
+  ],
+  "10-29": [
+    {
+      "tipo": "Religión / Evento nacional",
+      "evento": "V° Congreso Eucarístico",
+      "descripcion": "El Presidente Perón y Evita participan en Rosario del V° Congreso Eucarístico Nacional. - 1950"
+    }
+  ],
+  "10-30": [
+    {
+      "tipo": "Sindicalismo",
+      "evento": "Reconstrucción espacio sindical",
+      "descripcion": "Las 62 Organizaciones Peronistas reconstruyen el espacio sindical identificado con Perón. - 1964"
+    }
+  ],
+  "11-2": [
+    {
+      "tipo": "Exilio",
+      "evento": "Perón abandona Paraguay",
+      "descripcion": "Perón abandona Paraguay tras su derrocamiento; el 5 llega a Caracas y sigue a Panamá. - 1955"
+    }
+  ],
+  "11-3": [
+    {
+      "tipo": "Industria / Economía",
+      "evento": "Frigorífico Smithfield",
+      "descripcion": "El P.E. adquiere el frigorífico Smithfield en Zárate mediante CAP, fortaleciendo la ganadería argentina. - 1947"
+    },
+    {
+      "tipo": "Campaña electoral",
+      "evento": "Cancelación homenaje a Evita",
+      "descripcion": "Se cancela la campaña electoral justicialista como homenaje a Evita, internada para intervención quirúrgica. - 1951"
+    }
+  ],
+  "11-7": [
+    {
+      "tipo": "Salud",
+      "evento": "Operación de Evita",
+      "descripcion": "El Dr. Ricardo Finocchietto opera a Evita. - 1951"
+    }
+  ],
+  "11-9": [
+    {
+      "tipo": "Campaña electoral",
+      "evento": "Mensaje de Evita",
+      "descripcion": "Evita habla por radio en mensaje grabado: 'Hay que ganar por abrumadora mayoría, para que se convenzan que Perón y el pueblo son una misma cosa'. - 1951"
+    }
+  ],
+  "11-10": [
+    {
+      "tipo": "Salud pública",
+      "evento": "Policlínico Ferroviario",
+      "descripcion": "Perón preside la inauguración de las obras del Policlínico Ferroviario. - 1944"
+    }
+  ],
+  "11-11": [
+    {
+      "tipo": "Elecciones",
+      "evento": "Triunfo Perón-Quijano",
+      "descripcion": "Triunfa Perón-Quijano por el 62% de los votos sobre Balbín-Frondizi. Primer voto femenino. Evita vota desde su lecho de enferma. - 1951"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Estado de Sitio",
+      "descripcion": "Frondizi decreta Estado de Sitio. - 1958"
+    }
+  ],
+  "11-12": [
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Chacho Peñaloza",
+      "descripcion": "Muere el caudillo montonero 'Chacho' Peñaloza. - 1863"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Rodolfo Puiggrós",
+      "descripcion": "Muere Rodolfo Puiggrós, historiador y pensador nacional. - 1980"
+    }
+  ],
+  "11-13": [
+    {
+      "tipo": "Elecciones",
+      "evento": "Anticipación de comicios",
+      "descripcion": "El gobierno resuelve anticipar los comicios para el 24 de febrero de 1946. - 1945"
+    },
+    {
+      "tipo": "Industria / Nacionalización",
+      "evento": "Empresas alemanas",
+      "descripcion": "Se 'argentinizan' 20 importantes empresas alemanas, incluyendo Siemens, AEG y Bayer. - 1945"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Cambio de mando",
+      "descripcion": "Cae Lonardi y asume Aramburu. - 1955"
+    }
+  ],
+  "11-14": [
+    {
+      "tipo": "Distinción académica",
+      "evento": "Dr. Honoris Causa",
+      "descripcion": "Perón recibe título Dr. Honoris Causa de la Universidad Argentina. Diserta sobre cultura nacional y educación universitaria. - 1947"
+    }
+  ],
+  "11-15": [
+    {
+      "tipo": "Salud / Popular",
+      "evento": "Desfile de antorchas por Evita",
+      "descripcion": "Conmovedor desfile de antorchas rogando por la salud de Evita alrededor de la residencia presidencial. - 1951"
+    },
+    {
+      "tipo": "Religión",
+      "evento": "Coronación Virgen de Luján",
+      "descripcion": "Perón apadrina la coronación de la Virgen de Luján en Plaza de Mayo. - 1953"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Exámenes suprimidos",
+      "descripcion": "Se suprimen los exámenes de ingreso para la enseñanza media. - 1954"
+    }
+  ],
+  "11-16": [
+    {
+      "tipo": "Gobierno de facto",
+      "evento": "Intervención de la Central Obrera",
+      "descripcion": "El gobierno de Aramburu interviene la Central Obrera. Álvaro Alsogaray jura como Ministro de Industria. - 1955"
+    }
+  ],
+  "11-17": [
+    {
+      "tipo": "Repatriación",
+      "evento": "Restos de Eva Perón",
+      "descripcion": "Vuelta de Perón a la Argentina; masiva movilización y reencuentro en Ezeiza. Perón recibe a la dirigencia política y social, planifica la estrategia del peronismo. - 1972"
+    }
+  ],
+  "11-18": [
+    {
+      "tipo": "Justicia",
+      "evento": "Personería jurídica Partido Justicialista",
+      "descripcion": "La Suprema Corte revoca la sentencia que negaba la personería jurídica al Partido Justicialista. - 1965"
+    }
+  ],
+  "11-20": [
+    {
+      "tipo": "Vivienda",
+      "evento": "Préstamos hipotecarios",
+      "descripcion": "Se otorgan nuevos préstamos hipotecarios con planes de hasta 50 años. - 1953"
+    },
+    {
+      "tipo": "Gobierno de facto",
+      "evento": "Disolución del Partido Peronista",
+      "descripcion": "Es disuelto el Partido Peronista; prohibida su marcha y confiscados sus locales. - 1955"
+    }
+  ],
+  "11-21": [
+    {
+      "tipo": "Partido político",
+      "evento": "Primer Manifiesto del Partido Único",
+      "descripcion": "Se da a conocer el primer manifiesto del Partido Único de la Revolución. - 1946"
+    },
+    {
+      "tipo": "Educación",
+      "evento": "Suspensión de aranceles universitarios",
+      "descripcion": "Perón suspende el cobro de aranceles universitarios. - 1946"
+    }
+  ],
+  "11-26": [
+    {
+      "tipo": "Trabajo",
+      "evento": "Creación Secretaría de Trabajo y Previsión",
+      "descripcion": "Se crea la Secretaría de Trabajo y Previsión; Perón es nombrado titular. - 1943"
+    }
+  ],
+  "11-27": [
+    {
+      "tipo": "Política / Doctrina",
+      "evento": "Referencia a la Tercera Posición",
+      "descripcion": "Perón hace primera referencia a la Tercera Posición desde el Teatro Colón. - 1946"
+    },
+    {
+      "tipo": "Elecciones provinciales",
+      "evento": "Triunfo Peronista",
+      "descripcion": "Elecciones provinciales en Salta y Jujuy. - 1949"
+    }
+  ],
+  "11-29": [
+    {
+      "tipo": "Educación / Sindicalismo",
+      "evento": "CGU",
+      "descripcion": "Perón clausura el Primer Congreso de la Confederación General Universitaria (CGU) en el Teatro Colón."
+    }
+  ],
+  "11-30": [
+    {
+      "tipo": "Gobierno de facto",
+      "evento": "Disolución Partido Peronista",
+      "descripcion": "La dictadura de Aramburu ordena la disolución del Partido Peronista. - 1955"
+    }
+  ],
+  "12-1": [
+    {
+      "tipo": "Plan de gobierno",
+      "evento": "Segundo Plan Quinquenal",
+      "descripcion": "Perón anuncia el 2° Plan Quinquenal, un ambicioso proyecto que busca el autoabastecimiento del país en más de 800 objetivos vitales. - 1951"
+    },
+    {
+      "tipo": "Exilio",
+      "evento": "Intento de regreso",
+      "descripcion": "Perón intenta regresar al país, pero es detenido en Río de Janeiro por el Presidente Illia y obligado a regresar a España. - 1965"
+    }
+  ],
+  "12-2": [
+    {
+      "tipo": "Trabajo / Gobierno",
+      "evento": "Asume Secretaría de Trabajo",
+      "descripcion": "Perón asume en la Secretaría de Trabajo y Previsión y anuncia la era de la Política Social de la Argentina. - 1943"
+    },
+    {
+      "tipo": "Gremial",
+      "evento": "Concentración de mercantiles",
+      "descripcion": "Angel Borlenghi organiza concentración para agradecer la ley de jubilación de empleados de comercio. - 1944"
+    },
+    {
+      "tipo": "Partido político",
+      "evento": "Carta orgánica Partido Peronista",
+      "descripcion": "Clausura del Congreso Constituyente del Partido Peronista y sanción de su primera carta orgánica. - 1947"
+    },
+    {
+      "tipo": "Ciencia",
+      "evento": "Primer ciclotrón argentino",
+      "descripcion": "Perón asiste a la puesta en marcha del primer ciclotrón construido en el país por la Comisión Nacional de la Energía Atómica. - 1954"
+    },
+    {
+      "tipo": "Exilio",
+      "evento": "Vuelo detenido de regreso",
+      "descripcion": "Perón regresa en avión a Argentina pero es detenido en Brasil y obligado a regresar a España. - 1964"
+    }
+  ],
+  "12-4": [
+    {
+      "tipo": "Jubilaciones",
+      "evento": "Régimen para empleados de comercio",
+      "descripcion": "Firma del régimen de jubilación para empleados de comercio, motivando una gran manifestación de beneficiados. - 1944"
+    },
+    {
+      "tipo": "Administración territorial",
+      "evento": "Provincia de Misiones",
+      "descripcion": "El gobierno convierte en provincia el territorio Nacional de Misiones. - 1953"
+    }
+  ],
+  "12-5": [
+    {
+      "tipo": "Elecciones",
+      "evento": "Triunfo electoral",
+      "descripcion": "Triunfo electoral del peronismo en todo el país para elegir 158 diputados constituyentes, diputados y electores para senadores. - 1948"
+    }
+  ],
+  "12-7": [
+    {
+      "tipo": "Partido político",
+      "evento": "Personería jurídica",
+      "descripcion": "Obtiene su personería jurídica el Partido Laborista y la Unión Cívica Radical – Junta Renovadora. - 1945"
+    }
+  ],
+  "12-8": [
+    {
+      "tipo": "Fundación",
+      "evento": "Evita retoma funciones",
+      "descripcion": "Evita reasume sus tareas habituales frente a la Fundación que lleva su nombre. - 1951"
+    }
+  ],
+  "12-9": [
+    {
+      "tipo": "Expropiación / Tierra",
+      "evento": "Colonización de tierras",
+      "descripcion": "Se expropian 28.000 hectáreas en la Provincia de Buenos Aires para entregarlas en colonización. - 1949"
+    }
+  ],
+  "12-10": [
+    {
+      "tipo": "Matrimonio",
+      "evento": "Perón y Evita",
+      "descripcion": "El Coronel Juan Domingo Perón y Evita contraen matrimonio religioso en la Parroquia de San Francisco de La Plata. - 1945"
+    }
+  ],
+  "12-11": [
+    {
+      "tipo": "Industria naval",
+      "evento": "Botadura del Azopardo",
+      "descripcion": "Botadura del primer buque patrullero 'Azopardo', construido en astilleros de Río Santiago. - 1953"
+    }
+  ],
+  "12-12": [
+    {
+      "tipo": "Laborismo / Política",
+      "evento": "Proclamación del laborismo",
+      "descripcion": "Acto en Plaza de la República proclamando el laborismo; discurso doctrinario de Perón. - 1945"
+    },
+    {
+      "tipo": "Gobierno",
+      "evento": "Asume tercera Presidencia",
+      "descripcion": "Perón asume la tercera Presidencia. - 1973"
+    }
+  ],
+  "12-14": [
+    {
+      "tipo": "Exilio / Retorno",
+      "evento": "Regreso a España",
+      "descripcion": "Perón viaja de regreso a España luego de permanecer un mes en Argentina. - 1972"
+    }
+  ],
+  "12-15": [
+    {
+      "tipo": "Administración social",
+      "evento": "Primer directorio del INPS",
+      "descripcion": "Perón pone en posesión al primer directorio del Instituto Nacional de Previsión Social. - 1944"
+    },
+    {
+      "tipo": "Elecciones",
+      "evento": "Fórmula FREJULI",
+      "descripcion": "El FREJULI proclama la fórmula Héctor Cámpora-Vicente Solano Lima para marzo de 1973. - 1972"
+    }
+  ],
+  "12-16": [
+    {
+      "tipo": "Infraestructura / Energía",
+      "evento": "Gasoducto Comodoro Rivadavia",
+      "descripcion": "Comienza a funcionar el gasoducto Comodoro Rivadavia-Buenos Aires y se resuelve levantar la ciudad universitaria en Córdoba. - 1949"
+    },
+    {
+      "tipo": "Fallecimiento",
+      "evento": "Dalmiro Flores",
+      "descripcion": "Muere Dalmiro Flores. - 1982"
+    }
+  ],
+  "12-17": [
+    {
+      "tipo": "Ferrocarriles",
+      "evento": "Compra FF.CC franceses",
+      "descripcion": "Compra de los ferrocarriles franceses. - 1946"
+    },
+    {
+      "tipo": "Asociación profesional",
+      "evento": "Organización de empleadores",
+      "descripcion": "El gobierno organiza por vía legislativa las asociaciones profesionales de empleadores. - 1953"
+    }
+  ],
+  "12-20": [
+    {
+      "tipo": "Trabajo / Salario",
+      "evento": "Instituto de Remuneraciones",
+      "descripcion": "Se crea el Instituto de Remuneraciones, estableciendo salario mínimo y aguinaldo. - 1945"
+    },
+    {
+      "tipo": "Jubilaciones",
+      "evento": "Ley de jubilación",
+      "descripcion": "Queda votada la ley de jubilación para empresarios y trabajadores independientes. - 1954"
+    }
+  ],
+  "12-21": [
+    {
+      "tipo": "Plan Quinquenal",
+      "evento": "Primer Plan Quinquenal",
+      "descripcion": "Perón presenta al Congreso el Primer Plan Quinquenal. - 1947"
+    },
+    {
+      "tipo": "Plan Quinquenal",
+      "evento": "Segundo Plan Quinquenal Ley",
+      "descripcion": "El 2° Plan Quinquenal de Gobierno se convierte en ley de la Nación. - 1951"
+    },
+    {
+      "tipo": "Plan Trienal",
+      "evento": "Plan Trienal 1973-77",
+      "descripcion": "Perón anuncia la puesta en marcha del Plan Trienal de Gobierno (1973-77). - 1973"
+    }
+  ],
+  "12-22": [
+    {
+      "tipo": "Administración pública",
+      "evento": "Dirección General Impositiva",
+      "descripcion": "El gobierno crea la Dirección General Impositiva. - 1946"
+    },
+    {
+      "tipo": "Exilio / Retorno",
+      "evento": "Perón puede regresar",
+      "descripcion": "Lanusse anuncia que Perón puede volver al país cuando quiera; Rogelio Frigerio elogia su liderazgo histórico. - 1971"
+    }
+  ],
+  "12-27": [
+    {
+      "tipo": "Trabajo / Economía",
+      "evento": "Aguinaldo y aumento de sueldos",
+      "descripcion": "Las fuerzas vivas ('Unión Democrática') resuelven resistir el decreto sobre aguinaldo y aumento de sueldos. - 1945"
+    }
+  ],
+  "12-29": [
+    {
+      "tipo": "Justicia / Economía",
+      "evento": "Multa a Bemberg",
+      "descripcion": "Se aplica a los herederos de Otto Sebastián Bemberg 97 millones de multa por ocultamiento de bienes. - 1949"
+    },
+    {
+      "tipo": "Secuestro",
+      "evento": "Jorge Di Pasquale",
+      "descripcion": "Secuestran y nunca más aparece el sindicalista peronista Jorge Di Pasquale. - 1976"
+    }
+  ],
+  "12-31": [
+    {
+      "tipo": "Historia / Cultura",
+      "evento": "Congreso Sanmartiniano",
+      "descripcion": "Perón clausura en Mendoza el Congreso Nacional de Historia del Libertador General San Martín. - 1950"
+    },
+    {
+      "tipo": "Publicación",
+      "evento": "La Razón de mi Vida",
+      "descripcion": "Al terminar el año aparece el libro 'La Razón de mi Vida', escrito por Eva Perón. - 1951"
+    }
+  ]
+}
