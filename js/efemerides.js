@@ -1,5 +1,6 @@
 // Base de datos de efemérides (se cargará desde archivo externo)
 let efemerides = {};
+let tiposEfemeride = [];
 
 // Datos de ejemplo embebidos como respaldo
 const efemeridesRespaldo = {
@@ -25,13 +26,74 @@ async function cargarEfemerides() {
         // Si falla, usar datos de respaldo
         efemerides = efemeridesRespaldo;
     }
-    
+
+    // Extraer tipos únicos de efemérides
+    tiposEfemeride = obtenerTiposEfemeride(efemerides);
+    renderTipoFiltro();
+
     // Actualizar calendario después de cargar datos
     updateCalendar();
     // Seleccionar automáticamente el día de hoy
     selectTodayByDefault();
 }
 
+// Función para obtener tipos únicos de efemérides
+function obtenerTiposEfemeride(efemeridesObj) {
+    const tiposSet = new Set();
+    Object.values(efemeridesObj).forEach(eventos => {
+        eventos.forEach(ev => {
+            if (ev.tipo) tiposSet.add(ev.tipo);
+        });
+    });
+    return Array.from(tiposSet);
+}
+
+// Renderiza el selector de tipos de efeméride
+function renderTipoFiltro() {
+    let filtroContainer = document.getElementById('tipoFiltroContainer');
+    if (!filtroContainer) {
+        // Crear el contenedor si no existe
+        const mainContainer = document.querySelector('.container.my-5');
+        filtroContainer = document.createElement('div');
+        filtroContainer.id = 'tipoFiltroContainer';
+        filtroContainer.className = 'mb-3';
+        // Insertar antes del calendario (antes del primer .card.card-custom.mb-4)
+        const calendarCard = mainContainer.querySelector('.card.card-custom.mb-4');
+        mainContainer.insertBefore(filtroContainer, calendarCard);
+    }
+    filtroContainer.innerHTML = `
+        <label for="tipoFiltro" class="form-label">Filtrar por tipo de efeméride:</label>
+        <select id="tipoFiltro" class="form-select">
+            <option value="">Todos</option>
+            ${tiposEfemeride.map(tipo => `<option value="${tipo}">${tipo}</option>`).join('')}
+        </select>
+    `;
+
+    // Ajustar el ancho del select según la opción más larga
+    setTimeout(() => {
+        const select = document.getElementById('tipoFiltro');
+        if (select) {
+            let maxLength = 0;
+            Array.from(select.options).forEach(opt => {
+                if (opt.text.length > maxLength) maxLength = opt.text.length;
+            });
+            // Aproximar el ancho en 'ch' (caracteres)
+            select.style.width = (maxLength + 2) + 'ch';
+        }
+    }, 0);
+
+    // Evento para actualizar la lista al cambiar el filtro
+    document.getElementById('tipoFiltro').addEventListener('change', () => {
+        // Actualizar calendario y lista filtrada
+        updateCalendar();
+        if (selectedDay !== null) {
+            const month = currentDate.getMonth();
+            const year = currentDate.getFullYear();
+            const dateKey = `${month + 1}-${selectedDay}`;
+            showEfemerides(dateKey, selectedDay, month, year);
+        }
+    });
+}
 let currentDate = new Date();
 let selectedDay = null;
 
@@ -58,22 +120,32 @@ function updateCalendar() {
         emptyDay.style.height = '48px';
         calendarGrid.appendChild(emptyDay);
     }
-    
+
+    // Obtener tipo seleccionado
+    const tipoFiltro = document.getElementById('tipoFiltro') ? document.getElementById('tipoFiltro').value : '';
+
     // Días del mes
     for (let day = 1; day <= daysInMonth; day++) {
         const dayElement = document.createElement('div');
         const dateKey = `${month + 1}-${day}`;
-        const hasEvents = efemerides[dateKey];
-        
+        let hasEvents = false;
+        if (efemerides[dateKey]) {
+            if (tipoFiltro) {
+                hasEvents = efemerides[dateKey].some(ev => ev.tipo === tipoFiltro);
+            } else {
+                hasEvents = efemerides[dateKey].length > 0;
+            }
+        }
+
         dayElement.className = `calendar-day ${hasEvents ? 'has-event' : ''}`;
         dayElement.textContent = day;
         dayElement.dataset.day = day;
         dayElement.dataset.dateKey = dateKey;
-        
+
         dayElement.addEventListener('click', () => {
             selectDay(dayElement, dateKey, day, month, year);
         });
-        
+
         calendarGrid.appendChild(dayElement);
     }
 }
@@ -114,13 +186,19 @@ function selectTodayByDefault() {
 function showEfemerides(dateKey, day, month, year) {
     const selectedDateElement = document.getElementById('selectedDate');
     const container = document.getElementById('efemeridesContainer');
-    
+
     selectedDateElement.textContent = `${day} de ${monthNames[month]}`;
-    
+
     const dayEfemerides = efemerides[dateKey];
-    
-    if (dayEfemerides && dayEfemerides.length > 0) {
-        container.innerHTML = dayEfemerides.map(efemeride => `
+    // Obtener tipo seleccionado
+    const tipoFiltro = document.getElementById('tipoFiltro') ? document.getElementById('tipoFiltro').value : '';
+    let filtradas = dayEfemerides || [];
+    if (tipoFiltro) {
+        filtradas = filtradas.filter(ev => ev.tipo === tipoFiltro);
+    }
+
+    if (filtradas.length > 0) {
+        container.innerHTML = filtradas.map(efemeride => `
             <div class="efemeride-card p-3 rounded mb-3">
                 <div class="d-flex align-items-center mb-2">
                     <span class="badge bg-primary me-3">${efemeride.tipo}</span>
@@ -133,7 +211,7 @@ function showEfemerides(dateKey, day, month, year) {
         container.innerHTML = `
             <div class="text-center py-5">
                 <div class="display-1 mb-3">📅</div>
-                <p class="text-muted">No hay efemérides registradas para esta fecha</p>
+                <p class="text-muted">No hay efemérides registradas para esta fecha${tipoFiltro ? ' y tipo seleccionado' : ''}</p>
                 <p class="small text-secondary">¡Pero cada día es especial por sí mismo!</p>
             </div>
         `;
